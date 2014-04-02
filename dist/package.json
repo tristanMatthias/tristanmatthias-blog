@@ -5,7 +5,8 @@
   "dependencies": {
     "consolidate": "0.10.0",
     "ejs": "0.8.5",
-    "express": "3.4.7"
+    "express": "3.4.7",
+    "nodemailer": "0.6.1"
   },
   "devDependencies": {
     "mimosa-sass": "*",

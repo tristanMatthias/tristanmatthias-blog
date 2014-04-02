@@ -31,6 +31,7 @@ exports.startServer = function(config, callback) {
   });
 
   app.get('/', routes.index(config));
+  app.get('/contact', routes.contact());
 
   callback(server);
 };

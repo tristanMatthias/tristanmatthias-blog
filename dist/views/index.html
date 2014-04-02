@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
 </head>
 <body>
-    
 
     <header>
         <a href="#home"><img src="images/logo.svg" alt="Tristan Matthias" class="logo"></a>
@@ -52,7 +51,10 @@
                                 <input type="email" name="email"   placeholder="Email">  
                                 <input type="text"  name="subject" placeholder="Subject">
                                 <textarea           name="message" placeholder="Message" maxlength="500" ></textarea>
-                                <button type="submit" class="big colored">Go!</button>
+                                <button type="submit" class="big colored">
+                                    <span class="text">Go!</span> 
+                                    <span class="loading"></span>
+                                </button>
                             </form>
                         </div>
                         <div class="back">
@@ -132,6 +134,31 @@
             slide.css("marginLeft", -pos * (100/slideNum) + "%");
 
         };
+
+        var f = $("form")
+        f.on("submit", function(e) {
+
+            var bText = f.find(".text"),
+                bIcon = f.find(".loading");
+            bText.hide();
+            bIcon.css("display", "block");
+
+            $.ajax({
+                url: "/contact",
+                data: f.serializeArray(),
+                success: function() {
+                    bIcon.hide();
+                    bText.show();
+                    f.closest(".flipContainer").addClass("flipped");
+                    f[0].reset();
+                }
+            });
+            
+            e.preventDefault();
+        }); 
+        $(".flipContainer .back button").on("click", function() {
+            $(this).closest(".flipContainer").removeClass("flipped");
+        });
 
     });
 </script>
