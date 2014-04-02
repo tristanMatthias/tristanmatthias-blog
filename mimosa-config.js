@@ -10,7 +10,8 @@ exports.config = {
     "live-reload",
     "bower",
     "sass",
-    "html-templates"
+    "html-templates",
+    "web-package"
   ],
   "server": {
     "views": {
