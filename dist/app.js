@@ -1,4 +1,3 @@
-require('coffee-script/register')
-server = require("./server.coffee");
+server = require("./server.js");
 config = require("./config");
 server.startServer(config, function(){});

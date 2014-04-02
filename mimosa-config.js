@@ -1,19 +1,7 @@
 exports.config = {
-  "modules": [
-    "copy",
-    "server",
-    "jshint",
-    "csslint",
-    "require",
-    "minify-js",
-    "minify-css",
-    "live-reload",
-    "bower",
-    "sass",
-    "html-templates",
-    "web-package"
-  ],
+  "modules": ["copy", "server", "require", "minify", "live-reload", "bower", "sass", 'web-package', "handlebars"],
   "server": {
+    "path": "server.js",
     "views": {
       "compileWith": "html",
       "extension": "html"
