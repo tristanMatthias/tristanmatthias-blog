@@ -1,0 +1,116 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; } body {line-height: 1; } ol, ul {list-style: none; } blockquote, q {quotes: none; } blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; } table {border-collapse: collapse; border-spacing: 0; }
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; outline: none; }
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300);
+
+
+body, html { bottom: 0; margin: 0; height: 100%; overflow: hidden; font-size: 18px; font-family: "Open Sans", Arial, sans-serif; 
+             background-color: #2f292c; }
+
+
+/* =========================================================
+ * Main Elements
+ */
+em { font-weight: 500; }
+h1 { color: white; font-size: 4em; font-weight: 300; margin-bottom: 0.5em;}
+h2 { color: #777; font-size: 2em; margin-bottom: 1.5em; }
+
+button,
+a       {text-decoration: none; color: white; -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -ms-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
+a:hover { color: #d91e5c; }
+
+
+/* =========================================================
+ * Main Classes
+ */
+.colored           { color: #d91e5c; }
+.big               { border-radius: 5px; background-color: rgba(0,0,0,0.3); padding: 0.25em 0.5em; }
+.big.colored       { color: white; background-color: #d91e5c; } 
+.big.colored:hover { color: #83123a; }
+
+
+/* =========================================================
+ * Header
+ */
+body > header   { position: absolute; width: 100%; height: 6em; padding: 1em 2em; z-index: 100; }
+.logo           { height: 4em; }
+header nav      { float: right; height: 100%; }
+header nav li   { float: left; line-height: 4em; font-weight: 300; margin-left: 1em; }
+header nav li a { color: white; }
+
+
+/* =========================================================
+ * Nav
+ */
+body > nav        { position: fixed; top: 50%; width: 100%; height: 0; padding: 0 2em; z-index: 100; }
+body > nav button { display: block; width: 34px; height: 37px; background-color: transparent; background-image: url(/images/hex.svg); border: 0; padding: 0.5em; line-height: 1em; font-size: 1em; }
+body > nav .prev  { float: left; }
+body > nav .next  { float: right; }
+
+
+/* =========================================================
+ * Slides
+ */
+.slideContainer    { display: block; height: 100%; }
+.slideContainer ul { width: 100%; height: 100%;
+                      -webkit-transition: margin-left 0.5s; -moz-transition: margin-left 0.5s; -ms-transition: margin-left 0.5s; -o-transition: margin-left 0.5s; transition: margin-left 0.5s; 
+                   }
+.slide             { position: relative; height: 100%; float: left; padding: 8em; -webkit-background-size: cover; background-size: cover;}
+
+
+/* =========================================================
+ * Home
+ */
+.slide[data-name='home']          { background-image: url(/images/backs/1.jpg); }
+.slide[data-name='home']:before   { display: block; content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                                  z-index: 0; background-image: url(/images/backs/1-pattern.png); }
+.slide[data-name='home'] .content { position: absolute; z-index: 1; }
+.slide[data-name='home'] .content 
+                             .big { margin-right: 1em; }
+
+/* =========================================================
+ * Work/Portfolio
+ */
+.slide[data-name='work'] { background-image: url(/images/backs/work.jpg); }
+#behance li { width: 30%; height: 300px; margin-right: 5%; background-color: #eee; float: left; border-radius: 5px; overflow: hidden; }
+#behance li:nth-child(3n) { margin-right: 0; }
+#behance li header { padding: 1em; color: #d91e5c; background-color: white; }
+#behance li img { display: block; margin: auto; }
+#behance li p { padding: 1em; background-color: white; font-size: 0.8em; min-height: 90px; line-height: 1.5em; color: #777; }
+
+/* =========================================================
+ * Contact & Forms
+ */
+.slide[data-name='contact'] { background-image: url(/images/backs/contact.jpg); text-align: center; }
+.front, .back { border-radius: 5px; overflow: hidden; }
+form { width: 350px; height: 100%;  }
+.slide[data-name='contact'] button,
+textarea,
+input { display: block; width: 100%; height: 4em; margin: 0; font-family: "Open Sans", Arial, sans-serif; font-size: 1em; resize: none; padding: 1em; color: #aaa;
+        border: 0; border-bottom: 2px solid #ddd; }
+textarea:focus,
+input:focus { background: #eee; }
+
+textarea { height: 8em; border: 0;}
+.slide[data-name='contact'] button { border-radius: 0; border: 0; cursor: pointer; color: white; }
+
+.back { background-color: white; }
+.back h2 { line-height: 378px; }
+.back button { position: absolute; bottom: 0; }
+
+.flipContainer                { -webkit-perspective: 1000; perspective: 1000; margin: auto; }
+.flipContainer.hover .flipper { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
+.flipContainer, 
+.flipContainer .front, 
+.flipContainer .back          { width: 350px; height: 432px; }
+.flipContainer .flipper       { -webkit-transition: 0.6s; transition: 0.6s; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; position: relative; }
+.flipContainer .front, 
+.flipContainer .back          { -webkit-backface-visibility: hidden; backface-visibility: hidden; position: absolute; top: 0; left: 0; }
+.flipContainer .front         { z-index: 2; }
+.flipContainer .back          { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
+
