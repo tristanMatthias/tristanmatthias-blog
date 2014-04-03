@@ -150,11 +150,12 @@
             $.ajax({
                 url: "/contact",
                 data: f.serializeArray(),
+                type: "post",
                 success: function() {
                     bIcon.hide();
                     bText.show();
                     f.closest(".flipContainer").addClass("flipped");
-                    f[0].reset();q
+                    f[0].reset();
                 }
             });
             
