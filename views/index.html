@@ -8,9 +8,9 @@
 <body>
 
     <header>
-        <a href="#home"><img src="images/logo.svg" alt="Tristan Matthias" class="logo"></a>
         <nav>
             <ul>
+                <li class="logo"><a href="#home"><img src="images/logo.svg" alt="Tristan Matthias"></a></li>
                 <li><a href="#work">Portfolio</a></li>
                 <li><a href="#contact" class="big colored">Contact</a></li>
             </ul>
@@ -131,6 +131,10 @@
             var name = $(slides[pos]).data("name");
             window.location.hash = (name != "home") ? name : "";
             container.data("pos", pos);
+            
+            var nav = $("body > header nav").find("li").removeClass("active");
+            $(nav[pos]).addClass("active");
+
             slide.css("marginLeft", -pos * (100/slideNum) + "%");
 
         };
@@ -150,7 +154,7 @@
                     bIcon.hide();
                     bText.show();
                     f.closest(".flipContainer").addClass("flipped");
-                    f[0].reset();
+                    f[0].reset();q
                 }
             });
             
