@@ -47,10 +47,19 @@
                     <div class="flipper">
                         <div class="front">
                             <form action="/contact">
-                                <input type="text"  name="name"    placeholder="Name">   
-                                <input type="email" name="email"   placeholder="Email">  
-                                <input type="text"  name="subject" placeholder="Subject">
-                                <textarea           name="message" placeholder="Message" maxlength="500" ></textarea>
+                                <div class="formField">
+                                    <input type="text"  name="name"    placeholder="Name">   
+                                </div>
+                                <div class="formField">
+                                    <input type="email" name="email"   placeholder="Email">  
+                                </div>
+                                <div class="formField">    
+                                    <input type="text"  name="subject" placeholder="Subject">
+                                </div>
+                                <div class="formField">
+                                    <textarea name="message" placeholder="Message" maxlength="500" ></textarea>
+                                </div>
+
                                 <button type="submit" class="big colored">
                                     <span class="text">Go!</span> 
                                     <span class="loading"></span>
@@ -70,6 +79,8 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/javascripts/vendor/jquery-validation/jquery.validate.js"></script>
+
 <script>var BEHANCE_USER = "tristanmatthias";</script>
 <script src="/javascripts/behance.js"></script>
 
@@ -139,9 +150,30 @@
 
         };
 
-        var f = $("form")
-        f.on("submit", function(e) {
 
+        var f = $("form")
+
+        // Reseting the message
+        $.validator.messages.required = 
+        $.validator.messages.minlength =
+        $.validator.messages.email =  "!"
+
+        f.validate({
+        rules: {
+            name: {required: true, minlength: 2},
+            email: {
+                required: true,
+                email: true
+            },
+            subject: {
+                required: true,
+            }, 
+            message: {
+                required: true
+            }
+        },
+        messages: "!",
+        submitHandler: function(form) {
             var bText = f.find(".text"),
                 bIcon = f.find(".loading");
             bText.hide();
@@ -158,9 +190,15 @@
                     f[0].reset();
                 }
             });
-            
-            e.preventDefault();
-        }); 
+
+            return false;
+        }
+    });
+
+
+
+
+
         $(".flipContainer .back button").on("click", function() {
             $(this).closest(".flipContainer").removeClass("flipped");
         });
