@@ -4,7 +4,7 @@ $color-highlightHover: $pink-dark;
 $color-secondary: $grey;
 
 body, html { bottom: 0; margin: 0; height: 100%; overflow: hidden; font-size: 18px; font-family: $font-stack; background-color: $pink-grey; }
-
+#richsnippet { display: none; }
 
 /* =========================================================
  * Main Elements
@@ -99,7 +99,7 @@ body > nav { position: fixed; top: 50%; width: 100%; height: 0; padding: 0 2em; 
 /* =========================================================
  * Contact & Forms
  */
-.slide[data-name='contact'] { background-image: url(/images/backs/contact.jpg); text-align: center; 
+.slide[data-name='contact'] { background-image: url(/images/backs/contact.jpg); text-align: center; padding-bottom: 0;
                               .front, .back { border-radius: 5px; overflow: hidden; }
                               form { width: 100%; height: 100%; }
                             }
