@@ -124,7 +124,10 @@
                 $.error(message);
             }
             xhr.onload = function() {
-              alert(this.statusText);
+              if (this.statusText.toLowerCase() === "ok") {
+                alert("Thanks!");
+                window.location = "/";
+              }
             };
 
             xhr.send(fd);
