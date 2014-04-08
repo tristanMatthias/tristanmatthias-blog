@@ -43,10 +43,8 @@ exports.startServer = function(config, callback) {
   });
 
   
-  app.get('/', routes.index(config));
-
-  app.post('/contact', routes.contact());
-
+  app.get('/',          routes.index(config));
+  app.post('/contact',  routes.contact());
   app.get('/:template', routes.template());
 
 
@@ -57,7 +55,7 @@ exports.startServer = function(config, callback) {
 
     // respond with html page
     if (req.accepts('html')) {
-      res.render('404', { url: req.url });
+      res.render('404', { url: req.url, fullscreen: true });
       return;
     }
 

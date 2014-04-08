@@ -11,7 +11,8 @@ exports.index = function(config) {
     var options = {
         reload:    config.liveReload.enabled,
         optimize:  config.isOptimize != null ? config.isOptimize : false,
-        cachebust: cachebust
+        cachebust: cachebust,
+        fullscreen: true
     };
 
 
@@ -28,6 +29,7 @@ exports.contact = function() {
             (req.method.toLowerCase() === "get") ? req.query : req.body
         ));
         options.html = "";
+        console.log(options);
 
         // Gets all the filenames
         var filepaths = [];
@@ -88,7 +90,7 @@ exports.template = function() {
         res.render(req.params.template, function(err, html) {
             if (err) {
                 console.log(err);
-                res.render(404, "404");
+                res.render("404", {fullscreen: true});
             } else {
                 res.send(html);
             }

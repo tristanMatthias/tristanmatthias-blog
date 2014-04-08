@@ -5,32 +5,43 @@
 
 <form action="/contact" type="post" enctype="multipart/form-data">
 
+    <label disabled="true">Your details</label>
+    <input type="text"  name="name"    placeholder="Name">
+    <input type="email" name="email"   placeholder="Email">
+    
+
+    <label disabled="true">Your business</label>
+    <input type="text" name="bus_name"     placeholder="Business name">  
+    <textarea          name="bus_services" placeholder="What services/products does your business provide"></textarea>
+    <textarea name="customer" placeholder="Describe your perfect customer"></textarea>
+    
+
+
+    <label disabled="true">How I can help</label>
+    <select name="ser_type">
+        <option value="not selected" selected disabled>Type of service needed</option>
+        <option value="logo">Logos &amp; branding</option>
+        <option value="illustration">Illustrations & graphics</option>
+        <option value="ui">User interface design</option>
+        <option value="dev">Website development</option>
+        <option value="other">Other</option>
+    </select>
+    <textarea name="ser_requirements" placeholder="What do you need done"></textarea>
     <div class="formField">
-        <input type="text"  name="name"    placeholder="Name">   
+        <input type="file" id="previousLogos" name="a_previousLogo" multiple>
+        <label for="previousLogos">Upload</label> 
+        <label for="previousLogos">Previous logos</label>
     </div>
-    <div class="formField">
-        <input type="email" name="email"   placeholder="Email">  
-    </div>
-    <div class="formField">
-        <select name="type">
-            <option value="logo">Logos &amp; branding</option>
-            <option value="illustration">Illustrations & graphics</option>
-            <option value="ui">User interface design</option>
-            <option value="dev">Website development</option>
-            <option value="other">Other</option>
-        </select>
-    </div>
-    <div class="formField" disabled="true">
-        <label>Budget</label>
-    </div>
+
+    <label disabled="true">Budget &amp; Timeframe</label>
     <div class="formField radios">
-        <input type="radio" name="budget" value="500" id="budget-500">
+        <input type="radio" name="budget" value="<500" id="budget-500">
         <label for="budget-500">&lt; $500</label>  
 
-        <input type="radio" name="budget" value="1000" id="budget-1000">
+        <input type="radio" name="budget" value="<1000" id="budget-1000">
         <label for="budget-o500">&lt; $1000</label>  
 
-        <input type="radio" name="budget" value="2000" id="budget-2000">
+        <input type="radio" name="budget" value="<2000" id="budget-2000">
         <label for="budget-2000">&lt; $2000</label>  
 
         <input type="radio" name="budget" value="2000+" id="budget-2000p">
@@ -38,22 +49,24 @@
 
         <input type="radio" name="budget" value="unsure" id="budget-unsure">
         <label for="budget-unsure">Unsure</label>  
+    </div>
+    <select name="timeframe">
+        <option value="1 week">1 week</option>
+        <option value="Less than a month">Less than a month</option>
+        <option value="Over a month">Over a month</option>
+        <option value="Several months">Several months</option>
+    </select>
 
-    </div>
-    <div class="formField">
-        <input type="file" id="previousLogos" name="a_previousLogo" multiple>
-        <label for="previousLogos">Upload</label> 
-        <label for="previousLogos">Previous logos</label>
-    </div>
-    <div class="formField">
-        <textarea name="message" placeholder="Message" maxlength="500" ></textarea>
-    </div>
-
+    <label disabled="true">Other notes</label>
+    <textarea name="message" placeholder="Message" maxlength="500" ></textarea>
+    
     <button type="submit" class="big colored">
         <span class="text">Go!</span> 
         <span class="loading"></span>
     </button>
 </form>
+
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="/javascripts/vendor/jquery-validation/jquery.validate.js"></script>
@@ -99,6 +112,10 @@
                     fd.append(inp.name + "_" + i, f);
                 });
             })
+
+            $.each(f.serializeArray(), function(i, data) {
+                fd.append(data.name, data.value);
+            });
 
             var xhr = new XMLHttpRequest();
             xhr.open(f.attr("type"), f[0].action);

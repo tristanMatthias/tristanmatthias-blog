@@ -1,6 +1,8 @@
 @import "base";
 @import "imports/borderBounce";
 
+body, html { overflow: hidden; }
+h1 { text-align: left; }
 /* =========================================================
  * Nav
  */
