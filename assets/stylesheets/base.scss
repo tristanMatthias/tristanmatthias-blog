@@ -1,0 +1,126 @@
+@import "imports/import";
+$color-highlight: $pink;
+$color-highlightHover: $pink-dark;
+$color-secondary: $grey;
+
+body, html { bottom: 0; margin: 0; height: 100%; overflow: hidden; font-size: 18px; font-family: $font-stack; background-color: $pink-grey; }
+#richsnippet { display: none; }
+
+/* =========================================================
+ * Main Elements
+ */
+em { font-weight: 500; }
+h1 { color: white; font-size: 4em; font-weight: 300; margin-bottom: 0.5em;}
+h2 { color: $color-secondary; font-size: 2em; margin-bottom: 1.5em; }
+
+button,a { text-decoration: none; color: white; @include transition(all 0.15s); 
+           &:hover { color: $color-highlight; }
+         }
+
+
+/* =========================================================
+ * Main Classes
+ */
+.colored { color: $color-highlight; }
+.big     { @include border-radius(5px); background-color: rgba(0,0,0,0.3); padding: 0.25em 0.5em; 
+           &.colored { color: white; background-color: $color-highlight; 
+                       &:hover { color: $color-highlightHover; }
+                     } 
+         }
+.clear { &:after { content: ""; display: block; height: 0; clear: both; } }
+
+
+/* =========================================================
+ * Header
+ */
+body > header { position: absolute; width: 100%; height: 6em; padding: 1em 2em; z-index: 100; }
+.logo         { padding-top: 0; float: left; margin-left: 0; 
+                img { height: 4em; }
+              }
+header nav    { float: right; height: 100%; width: 100%; text-align: right; 
+                li { display: inline-block; height: 4.5em; padding-top: 1.5em; font-weight: 300; margin-left: 1em; 
+                     &.active { border-bottom: 4px solid white; }
+                   }
+                a  { color: white; }
+              }
+
+
+/* =========================================================
+ * Forms
+ */
+$form-border: 2px solid #ddd; 
+$color-hover: #f8f8f8;
+$color-focus: #eee;
+$color-text: #aaa;
+
+button[type="submit"], 
+textarea, input, select,
+ label                     { display: block; width: 100%; line-height: 2em; margin: 0; font-family: $font-stack; font-size: 1em; 
+                              resize: none; padding: 1em; color: $color-text; border: 0; @include transition(background-color 0.2s); background-color: white; }
+textarea:hover, input:hover, select:hover,
+.radios label:hover         { background-color: $color-hover; }
+
+select:focus,
+textarea:focus, input:focus { background-color: $color-focus; }
+textarea                    { height: 8em; border: 0; }
+select                      { background-image: url(/images/dropdown.png); background-repeat: no-repeat; background-position: top right; }
+
+
+button[type="submit"]       { @include border-radius(0); border: 0; cursor: pointer; color: white; background-color: $color-highlight; }
+input[type="radio"] { position: absolute; top: -999999px;
+                      &:checked + label, &:focus + label,  { background-color: $color-focus; }
+                    }
+.radios { @extend .clear; }                    
+.radios label { display: block; float: left; padding: 1em; text-align: center; border-right: $form-border;
+                &:last-of-type  { border-right: 0; }
+              }
+
+input[type="file"] { @include opacity(0); position: absolute; top: 0; left: 0; z-index: -100; 
+                     & + label { @extend button[type="submit"]; text-align: center; float: right; width: 5em;
+                             & + label { width: auto; 
+                                         &:hover { background-color: $color-hover; }
+                                       }
+                           }
+                     &:focus + label + label { background-color: $color-focus; }
+                   }
+
+.formField { position: relative; border-bottom: $form-border; overflow: hidden; }
+.formField[disabled="true"] label{ background-color: $color-focus; color: $color-highlight; font-weight: 700; }
+label.error { position: absolute; top: 4px; bottom: 4px; right: 0; width: 32px; z-index: 100; line-height: 3.3em; padding: 0 1em; max-height: 3.53em;
+              @include border-radius(5px 0 0 5px); background-color: $pink; color: white; font-weight: 700; }
+
+
+/* =========================================================
+ * Responsive
+ */
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1824px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (max-width : 1224px) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width : 1024px) {
+    body { font-size: 14px; }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
+@media only screen and (max-width : 640px) {
+    body { font-size: 10px; }
+    .flipContainer { width: 100%; }
+}
+
+/* Smartphones (portrait) (ie: Galaxy 1) */
+@media only screen and (max-width : 321px) {
+
+}

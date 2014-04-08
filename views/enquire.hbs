@@ -1,0 +1,120 @@
+{{> _header this}}
+<link rel="stylesheet" type="text/css" href="/stylesheets/enquire.css"/>
+
+<h1>Enquiries</h1>
+
+<form action="/contact" type="post" enctype="multipart/form-data">
+
+    <div class="formField">
+        <input type="text"  name="name"    placeholder="Name">   
+    </div>
+    <div class="formField">
+        <input type="email" name="email"   placeholder="Email">  
+    </div>
+    <div class="formField">
+        <select name="type">
+            <option value="logo">Logos &amp; branding</option>
+            <option value="illustration">Illustrations & graphics</option>
+            <option value="ui">User interface design</option>
+            <option value="dev">Website development</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div class="formField" disabled="true">
+        <label>Budget</label>
+    </div>
+    <div class="formField radios">
+        <input type="radio" name="budget" value="500" id="budget-500">
+        <label for="budget-500">&lt; $500</label>  
+
+        <input type="radio" name="budget" value="1000" id="budget-1000">
+        <label for="budget-o500">&lt; $1000</label>  
+
+        <input type="radio" name="budget" value="2000" id="budget-2000">
+        <label for="budget-2000">&lt; $2000</label>  
+
+        <input type="radio" name="budget" value="2000+" id="budget-2000p">
+        <label for="budget-2000p">$2000 +</label>  
+
+        <input type="radio" name="budget" value="unsure" id="budget-unsure">
+        <label for="budget-unsure">Unsure</label>  
+
+    </div>
+    <div class="formField">
+        <input type="file" id="previousLogos" name="a_previousLogo" multiple>
+        <label for="previousLogos">Upload</label> 
+        <label for="previousLogos">Previous logos</label>
+    </div>
+    <div class="formField">
+        <textarea name="message" placeholder="Message" maxlength="500" ></textarea>
+    </div>
+
+    <button type="submit" class="big colored">
+        <span class="text">Go!</span> 
+        <span class="loading"></span>
+    </button>
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/javascripts/vendor/jquery-validation/jquery.validate.js"></script>
+<script>
+    var f = $("form");
+
+    $("input[type=file]").on("change", function() {
+        var l = this.files.length,
+            next = $(this).next().next();
+        if (typeof next.data("initial") === "undefined") {
+            next.data("initial", next.html());
+        }
+
+        next.html(
+            next.data("initial") + (
+            (l > 0) ? (" (" + l + " file" + ((l > 1)?"s":"") + " added)") : ""
+        ));
+    }).trigger("change");
+
+    // Reseting the message
+    $.validator.messages.required = 
+    $.validator.messages.minlength =
+    $.validator.messages.email =  "!"
+
+    f.validate({
+        // rules: {
+        //     name: {required: true, minlength: 2},
+        //     email: {
+        //         required: true,
+        //         email: true
+        //     },
+        //     subject: {
+        //         required: true,
+        //     }, 
+        //     message: {
+        //         required: true
+        //     }
+        // },
+        submitHandler: function(form) {
+            var fd = new FormData();
+            $("input[type=file]", f).each(function(i, inp) {
+                $.each(this.files , function(i, f) {
+                    fd.append(inp.name + "_" + i, f);
+                });
+            })
+
+            var xhr = new XMLHttpRequest();
+            xhr.open(f.attr("type"), f[0].action);
+
+            xhr.onerror = function(message) {
+                $.error(message);
+            }
+            xhr.onload = function() {
+              alert(this.statusText);
+            };
+
+            xhr.send(fd);
+
+            return false;
+        }
+    });
+</script>
+
+{{> _footer this}}

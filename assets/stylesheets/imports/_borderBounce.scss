@@ -1,0 +1,33 @@
+@-webkit-keyframes borderBounce {
+    0%, 100% { border-width: 3.3333333333333335px; }
+    20%, 80% { border-width: 8.333333333333334px; }
+    25%, 75% { border-width: 5px; }
+}
+@-moz-keyframes borderBounce {
+    0%, 100% { border-width: 3.3333333333333335px; }
+    20%, 80% { border-width: 8.333333333333334px; }
+    25%, 75% { border-width: 5px; }
+}
+@-o-keyframes borderBounce {
+    0%, 100% { border-width: 3.3333333333333335px; }
+    20%, 80% { border-width: 8.333333333333334px; }
+    25%, 75% { border-width: 5px; }
+}
+@keyframes borderBounce {
+    0%, 100% { border-width: 3.3333333333333335px; }
+    20%, 80% { border-width: 8.333333333333334px; }
+    25%, 75% { border-width: 5px; }
+}
+
+.loading {
+    display: block; width: 32px; height: 32px; background-color: transparent; border: 10px solid white;
+    border-radius: 16px; margin: auto; display: none;
+    -webkit-animation: borderBounce 1.5s infinite;
+    -webkit-animation-timing-function:cubic-bezier(0,0,0.1,1.0);
+    
+    -moz-animation: borderBounce 1.5s infinite;
+    -moz-animation-timing-function:cubic-bezier(0,0,0.1,1.0);
+    
+    -o-animation: borderBounce 1.5s infinite;
+    -o-animation-timing-function:cubic-bezier(0,0,0.1,1.0);
+}
