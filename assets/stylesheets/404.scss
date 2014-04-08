@@ -1,4 +1,4 @@
-@import "style";
+@import "base";
 
 body { text-align: center; background-image: url(/images/404.gif); @include background-size(cover); }
 h2 { color: white; font-style: italic; font-weight: 500; }

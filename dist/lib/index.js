@@ -41,3 +41,10 @@ Object.prototype.extend = function(override) {
     }
     return copy;
 };
+
+
+String.prototype.capFirst = function() {
+    return this[0].toUpperCase() + this.slice(1);
+}
+
+console.log("\n\n\n\n\n\nGOT HERE");

@@ -37,12 +37,11 @@ var config = {
     "base": "",
     "packageJSONDir": null,
     "views": {
-      "compileWith": "ejs",
-      "extension": "html",
+      "compileWith": "handlebars",
+      "extension": "hbs",
       "path": [
         "views"
-      ],
-      "html": true
+      ]
     }
   }
 }

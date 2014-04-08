@@ -3,8 +3,8 @@ exports.config = {
   "server": {
     "path": "server.js",
     "views": {
-      "compileWith": "html",
-      "extension": "html"
+      "compileWith": "handlebars",
+      "extension": "hbs"
     }
   }
 }

@@ -1,4 +1,6 @@
-var mailer = require("../lib/mailer.js");
+var mailer = require("../lib/mailer.js").mailer,
+    async =  require("async"),
+    fs = require("fs");
 
 exports.index = function(config) {
     cachebust = ''
@@ -19,25 +21,77 @@ exports.index = function(config) {
 };
 
 
-var contact = exports.contact = function() {
+exports.contact = function() {
     return function(req, res) {
 
-        var options = JSON.parse(JSON.stringify(req.query));
+        var options = JSON.parse(JSON.stringify(
+            (req.method.toLowerCase() === "get") ? req.query : req.body
+        ));
         options.html = "";
 
-        if (req.query.email) {
-            options.html += "<b>From: </b>" + req.query.email;
-        }
-        if (req.query.email) {
-            options.html += "<br><b>Message: </b>" + req.query.message;
-        }
-        if (req.query.subject) {
-            options.subject = "ENQUIRY - " + options.subject;
+        // Gets all the filenames
+        var filepaths = [];
+        for (fname in req.files) {
+            var file = req.files[fname];
+            if (typeof file != "function") {
+                filepaths.push(file.path);
+            }
         }
 
-        mailer.send(options, function(err) {
-            if (!err) res.send("ok");
-            else res.send("error");
+        var files = [];
+        async.each(filepaths, function(filepath, cb) { 
+            fs.readFile(filepath, function(err, data) {
+                if (err) console.log(err);
+
+                files.push({filename: filepath.split("/").slice(-1)[0], contents: data});
+                cb();
+            });
+        }, sendMail);
+
+        function sendMail() {
+            for (var key in options) {
+                var obj = options[key];
+                if (typeof obj !== 'function') {
+                    // If attatchment
+                    if (key.slice(0,2) === "a_") {
+                        options.attatchments.push(obj);
+                    } else {
+                        options.html += "<b>" + key.capFirst() + "</b> <span>" + obj + "</span><br>";
+                    }
+                }
+            }
+
+            if (options.subject) {
+                options.subject = "ENQUIRY - " + options.subject;
+            } else {
+                options.subject = ["ENQUIRY", (req.body.type || null)].join(" - ");
+            }
+            
+            mailer.send_mail(
+            {       sender: 'noreply@tristanmatthias.com',
+                    to:'tristanmatthias94@gmail.com',
+                    subject:options.subject || "ENQUIRY",
+                    html:options.html,
+                    attachments : files
+            },function(err, success){
+                res.send((err) ? "bad": "ok");
+            });
+
+        }
+    }
+}
+
+
+exports.template = function() {
+    return function(req, res) {
+        console.log("GETTING TEMPLATE");
+        res.render(req.params.template, function(err, html) {
+            if (err) {
+                console.log(err);
+                res.render(404, "404");
+            } else {
+                res.send(html);
+            }
         });
     }
 }
