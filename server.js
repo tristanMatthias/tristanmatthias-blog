@@ -28,7 +28,7 @@ exports.startServer = function(config, callback) {
     app.use(express.bodyParser({ 
       keepExtensions: true, 
       uploadDir: path.join(__dirname,'tmp'),
-      limit: '2mb'
+      limit: '20mb'
     }));
     app.use(express.methodOverride());
     app.use(app.router);

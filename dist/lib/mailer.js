@@ -4,7 +4,7 @@ mailer.SMTP = {
     port:587,
     use_authentication: true, 
     user: 'hello@tristanmatthias.com', 
-    pass: 'Cactus28'
+    pass: 'Cactus28!'
 };
 
 exports.mailer = mailer;
