@@ -3,7 +3,8 @@ body {
     @include animation-delay(0.5s);
 }
 .wrapper {
-    max-width: gs(24);
+    width: (100vh / ($grid-cols - ($grid-margin*2)));
+    // max-width: gs(24);
     margin: auto;
 }
 

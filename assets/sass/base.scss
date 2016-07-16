@@ -15,5 +15,11 @@ body {
 @import "lib/include";
 
 
+
+
+$grid-cols: 6;
+$grid-margin: 1;
+
+
 // Load components
 @import "components/include";
