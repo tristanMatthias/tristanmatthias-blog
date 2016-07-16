@@ -1,5 +1,7 @@
+html {
+    font-size: 10px;
+}
 html, body {
-    font-size: $f-base;
     font-family: $f-stack;
     line-height: $f-line;
     color: col('text');

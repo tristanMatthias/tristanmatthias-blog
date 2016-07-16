@@ -65,7 +65,7 @@ html {
 
 body {
   background-color: col("grey-bg");
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 .c-purple.hover {
@@ -380,7 +380,7 @@ body {
   height: 100%;
 }
 
-.align-center-v {
+header.top svg#logo-top, .align-center-v {
   position: absolute;
   top: 50%;
   -moz-transform: translateY(-50%);
@@ -682,7 +682,7 @@ body {
 }
 
 .wrapper {
-  max-width: 96rem;
+  width: 66.66667vw;
   margin: auto;
 }
 
@@ -690,9 +690,9 @@ body {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 50%;
-  height: 48rem;
-  min-height: 48rem;
+  width: 33.33333vw;
+  height: 33.33333vw;
+  min-height: 33.33333vw;
   padding: 4rem;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -747,7 +747,7 @@ a.square:hover h4 {
 }
 
 .returnTop {
-  margin: 8rem 0;
+  height: 16.66667vw;
   text-align: center;
 }
 .returnTop .arrow {
@@ -755,145 +755,146 @@ a.square:hover h4 {
   margin: 2rem auto;
 }
 
-header.top {
-  position: relative;
-  height: 16rem;
-  line-height: 16rem;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -moz-animation: slide-down-in 1s forwards;
-  -webkit-animation: slide-down-in 1s forwards;
-  animation: slide-down-in 1s forwards;
-  z-index: 10;
-}
 header.top svg#logo-top {
-  margin-top: 6rem;
   height: 4rem;
 }
-header.top ul {
-  line-height: 16rem;
-}
-header.top ul li {
-  display: inline-block;
-  margin-left: 2rem;
-}
-header.top.c-purple li a {
-  color: #584A9C;
-}
-header.top.c-purple svg#logo-top path {
-  fill: #584A9C;
-}
-header.top.c-purple-watermark li a {
-  color: #C9C3CA;
-}
-header.top.c-purple-watermark svg#logo-top path {
-  fill: #C9C3CA;
-}
-header.top.c-beige li a {
-  color: #FCFAED;
-}
-header.top.c-beige svg#logo-top path {
-  fill: #FCFAED;
-}
-header.top.c-white li a {
-  color: #FFFFFF;
-}
-header.top.c-white svg#logo-top path {
-  fill: #FFFFFF;
-}
-header.top.c-green li a {
-  color: #52D98C;
-}
-header.top.c-green svg#logo-top path {
-  fill: #52D98C;
-}
-header.top.c-teal li a {
-  color: #4BC8CC;
-}
-header.top.c-teal svg#logo-top path {
-  fill: #4BC8CC;
-}
-header.top.c-red li a {
-  color: #C25746;
-}
-header.top.c-red svg#logo-top path {
-  fill: #C25746;
-}
-header.top.c-white-off li a {
-  color: #f8f8f8;
-}
-header.top.c-white-off svg#logo-top path {
-  fill: #f8f8f8;
-}
-header.top.c-grey-lightest li a {
-  color: #f0f0f0;
-}
-header.top.c-grey-lightest svg#logo-top path {
-  fill: #f0f0f0;
-}
-header.top.c-grey-light li a {
-  color: #bbb;
-}
-header.top.c-grey-light svg#logo-top path {
-  fill: #bbb;
-}
-header.top.c-vuid-blue li a {
-  color: #5696D1;
-}
-header.top.c-vuid-blue svg#logo-top path {
-  fill: #5696D1;
-}
-header.top.c-sparkpass-blue li a {
-  color: #0B95D0;
-}
-header.top.c-sparkpass-blue svg#logo-top path {
-  fill: #0B95D0;
-}
-header.top.c-sparkpass-yellow li a {
-  color: #D7D67A;
-}
-header.top.c-sparkpass-yellow svg#logo-top path {
-  fill: #D7D67A;
-}
-header.top.c-elastice-lavendar li a {
-  color: #DBD9EB;
-}
-header.top.c-elastice-lavendar svg#logo-top path {
-  fill: #DBD9EB;
-}
-header.top.c-skydeck-black li a {
-  color: #24211C;
-}
-header.top.c-skydeck-black svg#logo-top path {
-  fill: #24211C;
-}
-header.top.c-skydeck-gold li a {
-  color: #D19E32;
-}
-header.top.c-skydeck-gold svg#logo-top path {
-  fill: #D19E32;
-}
-header.top.c-adobe-magazine-blue li a {
-  color: #46A5C8;
-}
-header.top.c-adobe-magazine-blue svg#logo-top path {
-  fill: #46A5C8;
-}
-header.top.c-text li a {
-  color: #584A9C;
-}
-header.top.c-text svg#logo-top path {
-  fill: #584A9C;
-}
-header.top.c-main li a {
-  color: #584A9C;
-}
-header.top.c-main svg#logo-top path {
-  fill: #584A9C;
-}
 
+@media only screen {
+  header.top {
+    position: relative;
+    height: 8.33333vw;
+    line-height: 8.33333vw;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-animation: slide-down-in 1s forwards;
+    -webkit-animation: slide-down-in 1s forwards;
+    animation: slide-down-in 1s forwards;
+    z-index: 10;
+  }
+  header.top ul {
+    line-height: 8.33333vw;
+  }
+  header.top ul li {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  header.top.c-purple li a {
+    color: #584A9C;
+  }
+  header.top.c-purple svg#logo-top path {
+    fill: #584A9C;
+  }
+  header.top.c-purple-watermark li a {
+    color: #C9C3CA;
+  }
+  header.top.c-purple-watermark svg#logo-top path {
+    fill: #C9C3CA;
+  }
+  header.top.c-beige li a {
+    color: #FCFAED;
+  }
+  header.top.c-beige svg#logo-top path {
+    fill: #FCFAED;
+  }
+  header.top.c-white li a {
+    color: #FFFFFF;
+  }
+  header.top.c-white svg#logo-top path {
+    fill: #FFFFFF;
+  }
+  header.top.c-green li a {
+    color: #52D98C;
+  }
+  header.top.c-green svg#logo-top path {
+    fill: #52D98C;
+  }
+  header.top.c-teal li a {
+    color: #4BC8CC;
+  }
+  header.top.c-teal svg#logo-top path {
+    fill: #4BC8CC;
+  }
+  header.top.c-red li a {
+    color: #C25746;
+  }
+  header.top.c-red svg#logo-top path {
+    fill: #C25746;
+  }
+  header.top.c-white-off li a {
+    color: #f8f8f8;
+  }
+  header.top.c-white-off svg#logo-top path {
+    fill: #f8f8f8;
+  }
+  header.top.c-grey-lightest li a {
+    color: #f0f0f0;
+  }
+  header.top.c-grey-lightest svg#logo-top path {
+    fill: #f0f0f0;
+  }
+  header.top.c-grey-light li a {
+    color: #bbb;
+  }
+  header.top.c-grey-light svg#logo-top path {
+    fill: #bbb;
+  }
+  header.top.c-vuid-blue li a {
+    color: #5696D1;
+  }
+  header.top.c-vuid-blue svg#logo-top path {
+    fill: #5696D1;
+  }
+  header.top.c-sparkpass-blue li a {
+    color: #0B95D0;
+  }
+  header.top.c-sparkpass-blue svg#logo-top path {
+    fill: #0B95D0;
+  }
+  header.top.c-sparkpass-yellow li a {
+    color: #D7D67A;
+  }
+  header.top.c-sparkpass-yellow svg#logo-top path {
+    fill: #D7D67A;
+  }
+  header.top.c-elastice-lavendar li a {
+    color: #DBD9EB;
+  }
+  header.top.c-elastice-lavendar svg#logo-top path {
+    fill: #DBD9EB;
+  }
+  header.top.c-skydeck-black li a {
+    color: #24211C;
+  }
+  header.top.c-skydeck-black svg#logo-top path {
+    fill: #24211C;
+  }
+  header.top.c-skydeck-gold li a {
+    color: #D19E32;
+  }
+  header.top.c-skydeck-gold svg#logo-top path {
+    fill: #D19E32;
+  }
+  header.top.c-adobe-magazine-blue li a {
+    color: #46A5C8;
+  }
+  header.top.c-adobe-magazine-blue svg#logo-top path {
+    fill: #46A5C8;
+  }
+  header.top.c-text li a {
+    color: #584A9C;
+  }
+  header.top.c-text svg#logo-top path {
+    fill: #584A9C;
+  }
+  header.top.c-main li a {
+    color: #584A9C;
+  }
+  header.top.c-main svg#logo-top path {
+    fill: #584A9C;
+  }
+}
 footer.bottom {
-  height: 24rem;
+  height: 16.66667vw;
 }
 footer.bottom svg {
   height: 4rem;
@@ -967,8 +968,11 @@ svg.arrow.up {
   transform: rotate(-90deg);
 }
 
-html, body {
+html {
   font-size: 10px;
+}
+
+html, body {
   font-family: "Karla", sans-serif;
   line-height: 1.5em;
   color: #584A9C;
@@ -1365,8 +1369,52 @@ body.transition .square:not(.transition-ele) .arrow {
   animation-delay: 0.25s;
 }
 
+ul.columns li, ul.rows li {
+  z-index: 100;
+}
+
+ul.columns {
+  height: 0;
+}
+ul.columns li {
+  position: fixed;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(187, 187, 187, 0.2);
+  z-index: 100;
+}
+ul.columns li:nth-child(1) {
+  left: calc(16.66667vw - 1px);
+}
+ul.columns li:nth-child(2) {
+  left: calc(33.33333vw - 1px);
+}
+ul.columns li:nth-child(3) {
+  left: calc(50vw - 1px);
+}
+ul.columns li:nth-child(4) {
+  left: calc(66.66667vw - 1px);
+}
+ul.columns li:nth-child(5) {
+  left: calc(83.33333vw - 1px);
+}
+
+ul.rows li {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  margin-top: calc(8.33333vw - 1px);
+  height: 1px;
+  background-color: rgba(187, 187, 187, 0.2);
+}
+
+.above-grid {
+  position: relative;
+  z-index: 101;
+}
+
 section.title {
-  height: 48rem;
+  height: 41.66667vw;
 }
 section.title:before {
   content: "";

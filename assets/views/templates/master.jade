@@ -20,6 +20,10 @@ html(lang="en")
         
         
     body(class="#{(color) ? ('bg-' + color + ' c-' + color) : '' }")
+        ul.columns
+            each col in [1,2,3,4,5]
+                li
+        ul.rows
         include ../partials/header
         main
             block body
@@ -28,6 +32,9 @@ html(lang="en")
         
 
         script(src="#{jsPath}extlib/jquery/jquery.min.js")
+
+        script(src="#{jsPath}lib.js")
+
         script.
             var main = $("main");
             $(window).on("popstate", function(r) {

@@ -1,41 +1,36 @@
 header.top {
-    position: relative;
-    height: gs(4);
-    line-height: gs(4);
-    @include opacity(0);
-    @include animation(slide-down-in 1s forwards);
-    z-index: 10;
-
     svg#logo-top {
-        margin-top: gs(1.5);
+        @extend %align-center-v;
         height: gs(1);
     }
-    ul {
-        line-height: gs(4);
-        li {
-            display: inline-block;
-            margin-left: gs(0.5);
-        }
-    }
+}
 
-    @each $color, $val in $colors {
-        &.c-#{$color} {
-            li a {
-                color: $val;
+@media #{$tiny-up} {
+    header.top {
+        position: relative;
+        height: pgs(1/2);
+        line-height: pgs(1/2);
+        @include opacity(0);
+        @include animation(slide-down-in 1s forwards);
+        z-index: 10;
+        
+        ul {
+            line-height: pgs(1/2);
+            li {
+                display: inline-block;
+                margin-left: gs(0.5);
             }
-            svg#logo-top path {
-                fill: $val;
+        }
+
+        @each $color, $val in $colors {
+            &.c-#{$color} {
+                li a {
+                    color: $val;
+                }
+                svg#logo-top path {
+                    fill: $val;
+                }
             }
         }
     }
 }
-// body.transition header.top {
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-//     z-index: 100;
-//     @include transform(translateY(#{gs(-1)}));
-//     @include opacity(0);
-//
-//
-// }

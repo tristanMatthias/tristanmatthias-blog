@@ -37,6 +37,9 @@
     left: 50%;
     @include translate(-50%, -50%);
 }
+%above-grid {
+    z-index: $page-grid-z + 1;
+}
 
 %rounded { @include border-radius($border-radius); }
 %round { @include border-radius(50%); }

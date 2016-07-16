@@ -2,6 +2,10 @@
     @return $grid-size * $value;
 }
 
+@function pgs($value) {
+    @return $page-grid-size * $value;
+}
+
 @function map-set($map, $key, $value) {
   $new: ($key: $value);
   @return map-merge($map, $new);

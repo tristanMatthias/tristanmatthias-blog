@@ -6,6 +6,11 @@ $grid-size: 4rem;
 $border-radius: 0.1rem;
 $ani-speed: 0.5s;
 
+$page-grid-cols: 6;
+$page-grid-margin: 1;
+$page-grid-size: (100vw/$page-grid-cols);
+$page-grid-z: 100;
+
 @import "compass/css3";
 @import "functions";
 @import "colors";
@@ -13,3 +18,4 @@ $ani-speed: 0.5s;
 @import "extends";
 @import "type";
 @import "animations";
+@import "mediaqueries";

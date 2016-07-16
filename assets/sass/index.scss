@@ -4,10 +4,16 @@
 section.title {
     &:before {
         background-image: image-url("index/title.jpg");
+        @include background-size(cover);
     }
     h1 {
+        margin-top: -4.5rem;
         margin-left: gs(-1);
+        line-height: 10.7rem;
         @extend %align-center-v;
+    }
+    h2 {
+        bottom: gs(2);
     }
 }
 
@@ -19,11 +25,11 @@ section.title {
         height: 2px;
         background-color: col('beige');
         width: gs(3.5);
-        margin-bottom: gs(1);
+        margin-bottom: 6.1rem;
         @include transition(all 1s);
     }
     h2 {
-        margin-bottom: gs(2);
+        margin-bottom: 1.7rem;
     }
 }
 .square#sq-skills {
@@ -45,12 +51,14 @@ section.title {
     }
     h2 {
         @extend %align-center-v;
+        margin-top: 1.1rem;
     }
-    h2, p {
+    h2 {
         max-width: gs(8);
         text-align: right;
     }
     p {
+        width: gs(7);
         position: absolute;
         bottom: gs(1);
     }
@@ -69,6 +77,7 @@ section.title {
 
 .square#sq-elastice {
     overflow: hidden;
+    @extend %above-grid;
     &:after {
         position: absolute;
         top: gs(1);

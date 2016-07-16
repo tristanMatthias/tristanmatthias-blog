@@ -3,7 +3,7 @@ body {
     @include animation-delay(0.5s);
 }
 .wrapper {
-    width: (100vh / ($grid-cols - ($grid-margin*2)));
+    width: pgs(4);
     // max-width: gs(24);
     margin: auto;
 }
@@ -12,9 +12,9 @@ body {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 50%;
-    height: gs(12);
-    min-height: gs(12);
+    width: pgs(2);
+    height: pgs(2);
+    min-height: pgs(2);
     padding: gs(1);
     @include opacity(0);
 
@@ -55,7 +55,7 @@ a.square {
 
 
 .returnTop {
-    margin: gs(2) 0;
+    height: pgs(1);
     text-align: center;
     .arrow {
         display: block;
