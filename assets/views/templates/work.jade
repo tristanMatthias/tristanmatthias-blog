@@ -1,0 +1,13 @@
+extends master
+
+append css
+    link(rel="stylesheet", href="#{cssPath}work/common.css")
+
+block body
+    .wrapper
+        section.title.por
+            h1(class="bg-#{color}")
+                span.db.ani-spin-y.ani-delay-2 Sparkpass
+                
+        section.content
+            block content

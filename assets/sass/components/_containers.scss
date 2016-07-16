@@ -1,0 +1,63 @@
+body {
+    @include animation(whiten 0.5s forwards);
+    @include animation-delay(0.5s);
+}
+.wrapper {
+    max-width: gs(24);
+    margin: auto;
+}
+
+.square {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: gs(12);
+    min-height: gs(12);
+    padding: gs(1);
+    @include opacity(0);
+
+    @include animation(slide-up-in $ani-speed*2 forwards);
+    @include animation-delay(1s);
+    &:nth-child(2n) {
+        @include animation-delay(1.25s);
+    }
+    .arrow {
+        position: absolute;
+        right: gs(1);
+        bottom: gs(1);
+    }
+    &.w3 {
+        width: calc((100% - #{gs(1)}) / 3);
+        height: 30.66rem;
+        min-height: 30.66rem;
+        margin-bottom: gs(0.5);
+        &:nth-child(3n-1) {
+            margin: gs(0.5);
+            margin-top: 0;
+        }
+    }
+}
+a.square {
+    h4 { @include transition(all $ani-speed * 2); }
+    .arrow { @include transition(all $ani-speed); }
+
+    &:hover {
+        .arrow {
+            @include translateX(#{gs(1/2)})
+        }
+        h4 {
+            padding-right: 10%;
+        }
+    }
+}
+
+
+.returnTop {
+    margin: gs(2) 0;
+    text-align: center;
+    .arrow {
+        display: block;
+        margin: gs(1/2) auto;
+    }
+}

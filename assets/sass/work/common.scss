@@ -1,0 +1,38 @@
+@import "../lib/include";
+h1 {
+    margin-left: gs(-1);
+    @extend %align-center-v;
+}
+
+.overview {
+    padding: 0;
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: col('grey-lightest');
+    }
+    &:after {
+        @include transform(rotate(90deg));
+    }
+    li {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include transform(translate(-50%, -50%));
+        &:nth-child(1) { left: 25%; top: 25%; }
+        &:nth-child(2) { left: 75%; top: 25%; }
+        &:nth-child(3) { left: 25%; top: 75%; }
+        &:nth-child(4) { left: 75%; top: 75%; }
+        // &:nth-child(2n-1) {
+        //     border-right: 1px solid col('grey-lightest');
+        // }
+        // &:nth-child(-n+2) {
+        //     border-bottom: 1px solid col('grey-lightest');
+        // }
+    }
+}

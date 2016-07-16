@@ -1,0 +1,110 @@
+include ../variables
+include ../mixins
+include ../work
+
+-var color = "purple"
+block vars
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        block meta
+            meta(charset="UTF-8")
+        
+        title #{pageTitle}
+        
+        
+        block css
+            link(rel="stylesheet" href="#{cssPath}base.css")
+            link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Playfair+Display:400,700")
+        
+        
+    body(class="#{(color) ? ('bg-' + color + ' c-' + color) : '' }")
+        include ../partials/header
+        main
+            block body
+        include ../partials/footer
+        
+        
+
+        script(src="#{jsPath}extlib/jquery/jquery.min.js")
+        script.
+            var main = $("main");
+            $(window).on("popstate", function(r) {
+                if(r.originalEvent.state) {
+                    if(!r.originalEvent.state.html) return;
+                    document.open()
+                    document.write(r.originalEvent.state.html);
+                    document.close();
+                }
+            })
+            function transition(url, timeout) {
+                $("body").addClass("transition");
+                function run() {
+                    $.ajax(url).then(function(html) {
+                        if (!html) return;
+                        document.open()
+                        document.write(html);
+                        document.close();
+                        var title = $("title").html();
+                        
+                        history.pushState({
+                            html: html,
+                            title: title
+                        }, title, url);
+                        
+                    });
+                }
+                if (!timeout) {
+                    run()
+                } else {
+                    setTimeout(run, timeout);
+                }
+            }
+            function transitionSquare(type, element, color) {
+                //- Copy the element in the exact same place, and fixed position
+                var pos = element[0].getBoundingClientRect();
+                var copy = element.clone();
+                element.addClass('transition-ele-old');
+                copy.addClass("transition-ele");
+                copy.css({
+                    left: pos.left,
+                    top: pos.top,
+                    right: (document.body.clientWidth - pos.left - pos.width),
+                    bottom: pos.bottom
+                });
+                copy.insertAfter(main);
+                copy.addClass("transition");
+                
+            
+            }
+            
+            function transitionSwipe(c1, c2) {
+                $("<div>", {
+                    class: "transition-swipe bg-" + (c2 || "purple")
+                }).insertAfter(main);
+                $("<div>", {
+                    class: "transition-swipe bg-" + (c1 || "purple")
+                }).insertAfter(main);
+            }
+            
+            $(function() {
+                $("a.square").on("click", function(e) {
+                    e.preventDefault();
+                    transition(this.href, 2500);
+                    var ele = $(this);
+                    transitionSquare('square', ele, ele.data('color'));
+                });
+                $("a[data-transition='swipe']").on('click', function(e) {
+                    e.preventDefault();
+                    transition(this.href, 1000);
+                    transitionSwipe(
+                        $(this).data('color-first'),
+                        $(this).data('color-second')
+                    );
+                })
+            });
+            
+            
+
+        block js

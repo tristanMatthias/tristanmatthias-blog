@@ -1,0 +1,125 @@
+@keyframes slide-up {
+    to {
+        @include transform(translateY(#{gs(-1)}));
+        @include opacity(0);
+    }
+}
+@keyframes slide-up-margin {
+    to {
+        margin-top: gs(-1);
+        @include opacity(0);
+    }
+}
+@keyframes slide-up-in {
+    from {
+        @include transform(translateY(#{gs(1)}));
+        @include opacity(0);
+    }
+    to {
+        @include transform(translateY(0));
+        @include opacity(1);
+    }
+}
+@keyframes slide-down-in {
+    from {
+        @include transform(translateY(#{gs(-1)}));
+        @include opacity(0);
+    }
+    to {
+        @include transform(translateY(0));
+        @include opacity(1);
+    }
+}
+@keyframes slide-right-in {
+    from {
+        @include transform(translateX(#{gs(1)}));
+        @include opacity(0);
+    }
+    to {
+        @include transform(translateY(0));
+        @include opacity(1);
+    }
+}
+@keyframes slide-left-in {
+    from {
+        @include transform(translateX(#{gs(-1)}));
+        @include opacity(0);
+    }
+    to {
+        @include transform(translateY(0));
+        @include opacity(1);
+    }
+}
+@keyframes slide-right {
+    to {
+        @include transform(translateX(#{gs(1)}));
+        @include opacity(0);
+    }
+}
+@keyframes slide-left-margin {
+    to {
+        margin-left: gs(-1);
+        @include opacity(0);
+    }
+}
+
+@keyframes swipe-right {
+    from { width: 0;   @include opacity(0); }
+    to {  width: 100%; @include opacity(1); }
+}
+@keyframes swipe-right-out {
+    from { width: 100%; @include opacity(1); }
+    to {  width: 0%;    @include opacity(0); }
+}
+
+
+
+@keyframes make-header1 {
+    40%, 60%, 100% {
+        top: 0;
+        bottom: 0;
+    }
+}
+@keyframes make-header2 {
+    to {
+        left: 0;
+        right: 0;
+    }
+}
+
+@keyframes spin-y {
+    from {
+        // @include transform(rotate3d(0,1,0,80deg));
+        @include transform(rotateY(10deg) rotateZ(-10deg) rotateX(60deg));
+        @include opacity(0);
+    }
+    to {
+        @include transform(none);
+        @include opacity(1);
+    }
+}
+
+@keyframes screen-swipe {
+    from {height: 0%; }
+    to { height: 240%; }
+}
+
+@keyframes whiten {
+    to { background-color: col('white'); }
+}
+
+
+.ani-delay-1 { @include animation-delay(0.5s !important ); }
+.ani-delay-2 { @include animation-delay(0.75s !important ); }
+.ani-delay-3 { @include animation-delay(1s !important ); }
+.ani-delay-4 { @include animation-delay(1.5s !important ); }
+
+.ani-delay-1, .ani-delay-2, .ani-delay-3, .ani-delay-4 { @include opacity(0); }
+
+.ani-spin-y {
+    @include animation(spin-y $ani-speed forwards);
+}
+
+.ani-slide-down {
+    @include animation(slide-down-in $ani-speed forwards);
+}

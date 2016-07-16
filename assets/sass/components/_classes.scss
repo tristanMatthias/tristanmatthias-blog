@@ -1,0 +1,22 @@
+.db { display: block; }
+.dib { display: inline-block; }
+.por { position: relative; }
+
+.f-left { float: left; }
+.f-right { float: right; }
+
+.ta-l { text-align: left; }
+.ta-r { text-align: right; }
+
+.align-center { @extend %align-center; }
+.align-center-v { @extend %align-center-v; }
+.align-center-h { @extend %align-center-h; }
+.cover { @extend %cover; }
+
+.upper { text-transform: uppercase; }
+
+.clear { clear: both; height: 0; font-size: 0; }
+.clearfix:after { content:" "; clear: both; height: gs(1); }
+
+.noScroll { overflow: hidden; }
+.noClick { padding: none; }

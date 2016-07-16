@@ -1,0 +1,119 @@
+extends ../templates/master.jade
+
+block vars
+    -var pageTitle = "About"
+    -var color = "red"
+
+append css
+    link(rel="stylesheet", href="#{cssPath}about.css")
+block body
+    .wrapper
+        section.title.por
+            h1.c-red.ani-slide-down.ani-delay-1 About Me
+
+
+        section.content
+            .intro
+                p.ta-r.c-red With over 6 years adding value in IT companies, I work as a senior developer and designer in the modern web space.
+
+                h2.ani-slide-down.ani-delay-4 Entrepreneur at heart.
+                    img.align-center-h(src="#{imgPath}about/entrepreneur.svg", alt="Entrepreneur at heart.")
+                img.abstract(src="#{imgPath}about/abstract.jpg", alt="Abstract")
+
+                p Coming from a background of startups, web agencies and other internet ventures, I excel
+                    | most in environments where I can innovate, design and see these ideas through to development.
+
+                p.ta-r I’m an excellent leader, having taken very extensive training in personal growth
+                    | education, and experimenting in the IT industry from designing, coding, personal
+                    | startups and freelancing.
+
+                p Given the opportunity, I work to my full capacity in a close-knit team environment with
+                    | open communication and a clearly defined direction. I bring high energy to my work,
+                    | my team and am very socially driven.
+
+
+
+            h2.por.work.ani-slide-down.ani-delay-4 Work history
+                img.align-center-h(src="#{imgPath}about/work-history.svg", alt="Work history")
+            h4.c-teal From most recent
+
+            ul.history
+                li
+                    time Jun 2014 - Current
+                    h3
+                        span Vuid
+                    h4 Lead designer, Front-End developer
+
+                    p Working as the lead designer at Vuid has propelled my abilities in every direction.
+                        | Initially I was assigned with the challenging task of taking over an existing
+                        | UI and custom development framework, and taking it to the modern web.
+                    p.ta-r What makes Vuid unique is its attempt to solve the problem of ‘running your business
+                        | from one place’. It achieves this by providing an in-house, online app store wherein
+                        | business owners may choose from a variety of apps that all integrate. My challenge
+                        | was to create a consistent UX, and an Angular/Node.js framework that was flexible
+                        | enough for 3rd party developers to build on our platform. It had to look and
+                        | feel the same across all applications and platforms.
+
+                li
+                    time nov 2013 - apr 2014
+                    h3
+                        span Documaps.io
+                    h4 co-founder, lead developer
+
+                    p In November 2013 my business partner and I won an entry into iLab’s Germinate program.
+                        | This intensive 3-month course gives a startup a grant of up to $20,000 and a vast
+                        | array of resources.
+                    p.ta-l We created an online tool that reduces the friction between graphics designers their
+                        | clients. I worked as the lead developer on Documaps, a single page application using
+                        | Ember.js and D3. It has features such as tree graph drawing, a client side code
+                        | editor with live data updating, AJAX loading of data on the fly, and a non-page-refreshing
+                        | MVC system.
+
+                li
+                    time aug 2011 - Current
+                    h3
+                        span Freelancing
+                    h4 developer, Designer
+
+                    p During my time as a freelancer I have worked on several jobs including:
+                    ul.list
+                        li The construction of a corporate web scheduling application
+                            | used internally in various companies to organize jobs such as
+                            | truck deliveries. The application integrated with a pre-existing
+                            | PHP backend and with an AJAX/JSON pipeline between client
+                            | and server, focused heavily on client side Javascript and jQuery
+                            | to render the result. The scheduler has live updating to assure
+                            | that no data was overridden or lost. Additionally, it used a drag
+                            | and drop interface so the user could move data with ease.
+                        li Myfuturestudy.com.au (in collaboration with two others), is a
+                            | website that provides a comprehensive survey about what
+                            | university a graduating school student should use. The results
+                            | are sent to the student to assist their choice. This website
+                            | utilized a keygen validation system to assign students keygens
+                            | and validate them on use.
+                        li Many websites for individuals and small businesses.
+                        li Numerous designs for book covers, logo designs, and UX and UI design.
+
+                li
+                    time jun 2013 - nov 2013
+                    h3
+                        span Zeroseven
+                    h4 Front-end developer
+
+                    p.ta-l At Zeroseven I worked as a commercial front-end developer working on a score of web
+                        | applications and sites. Zeroseven provides its customers with the best quality
+                        | websites, and is a multi-award winning studio. The quality of work that Zeroseven
+                        | delivers is exceptional, and the effort that is spent on the small details is unlike 
+                        | any other website company I have dealt with. Some sites I worked on include:
+                    ul.list.ta-l.links.c-teal
+                        li 
+                            a(href="http://actfirst.org.au") actfirst.org.au
+                        li 
+                            a(href="http://redearthpersonnel.com.au") redearthpersonnel.com.au
+                        li 
+                            a(href="http://zeroseven.com.au") zeroseven.com.au
+                        li 
+                            a(href="http://gapgeo.com.au") gapgeo.com.au
+            .clear
+            
+    +returnTop('red')

@@ -1,17 +1,26 @@
 {
-  "name": "personal",
-  "version": "0.0.1",
-  "description": "A Mimosa starter skeleton",
-  "dependencies": {
-    "consolidate": "0.10.0",
-    "express": "3.4.7",
-    "nodemailer": "0.6.1",
-    "handlebars": "~2.0.0-alpha.2",
-    "connect": "~2.14.4",
-    "async": "~0.7.0"
+  "name": "tristan-matthias",
+  "version": "0.0.0",
+  "description": "Personal portfolio for Tristan Matthias",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "mimosa-sass": "*",
-    "mimosa-html-templates": "*"
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:tristanmatthias-blog.git"
+  },
+  "keywords": [
+    "portfolio",
+    "tristan",
+    "matthias"
+  ],
+  "author": "Tristan Matthias",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-connect": "^4.1.0",
+    "gulp-jade": "^1.1.0"
   }
 }

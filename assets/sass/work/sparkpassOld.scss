@@ -1,0 +1,187 @@
+@import "../lib/include";
+
+body {
+    background-color: col('sparkpass-yellow') !important;
+    color: col('sparkpass-blue');
+    @include animation(none);
+    h4 {
+        border-color: col('sparkpass-blue');
+    }
+}
+header.top {
+    position: absolute;
+    width: 100%;
+}
+section.header {
+    position: relative;
+    background-color: col('sparkpass-yellow');
+    min-height: 100vh;
+    @include animation(flashBack 2s forwards);
+    @include animation-delay(1s);
+    .bolt {
+        height: 50%;
+        fill: col('sparkpass-yellow');
+        @include animation(flashBolt 2s forwards);
+        @include animation-delay(1s);
+        @extend %align-center;
+    }
+}
+.break {
+    margin: gs(2) auto;
+    height: gs(1.5);
+    background: image-url("work/sparkpass/break.svg") no-repeat center;
+    @include opacity(0.5);
+    &.yellow {
+        background: image-url("work/sparkpass/break-yellow.svg") no-repeat center;
+        margin-bottom: 0;
+    }
+}
+p + p {
+    margin-top: gs(0.5);
+}
+section.intro {
+    .float:nth-child(1) {
+        margin-left: 20%;
+        max-width: gs(8);
+    }
+    .float:nth-child(2) {
+        margin-top: gs(-1);
+        margin-left: 60%;
+        .logo {
+            position: relative;
+            border: 4px solid col('sparkpass-blue');
+            width: gs(6);
+            margin-top: gs(0.5);
+            &:before {
+                content: "";
+                @extend %cover;
+                height: 0;
+                background-color: col('sparkpass-blue');
+            }
+            &:before, img {
+                @include transition(all $ani-speed/4 ease-in-out);
+            }
+            &:hover {
+                img {
+                    @include filter(brightness(100));
+                }
+                &:before {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+section.process {
+    .wrapper {
+        padding-top: gs(3);
+    }
+    ol, .float {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    ol {
+        width: 50%;
+        counter-reset: process;
+        text-align: center;
+        li {
+            display: inline-block;
+            position: relative;
+            width: 50%;
+            border: 2px solid lighten(col('sparkpass-blue'), 5%);
+            margin: gs(0.5);
+            line-height: 0;
+            &:before {
+                counter-increment: process;
+                content: counters(process,".") ".";
+                position: absolute;
+                width: gs(1);
+                height: gs(1);
+                line-height: gs(1);
+                text-align: center;
+                border: 2px solid col('sparkpass-yellow');
+                @extend %round;
+                @extend %fw-bold;
+                @extend %align-center-v;
+                margin-left: gs(-2);
+            }
+        }
+    }
+    .float {
+        width: 50%;
+        h4 { border-color: col('sparkpass-yellow'); }
+        p + p { width: 80%; margin-left: 20%;}
+    }
+
+    .mockup {
+        position: relative;
+        width: calc(50% - #{gs(2)});
+        margin: gs(1);
+        display: inline-block;
+        overflow: hidden;
+        line-height: 0;
+        @include background-size(cover);
+        @include border-radius(#{gs(1/2)});
+        @include box-shadow(0 #{gs(2)} #{gs(2)} #{darken(col('sparkpass-blue'), 10%)});
+
+
+        img {
+            width: 100%;
+            // height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            @include border-radius(#{gs(1/2)});
+        }
+    }
+
+    .card {
+        padding-bottom: gs(3);
+
+        .final {
+            line-height: 0;
+            @include border-radius(#{gs(1)});
+            overflow: hidden;
+            @include box-shadow(0 #{gs(2)} #{gs(2)} #{darken(col('sparkpass-blue'), 10%)});
+        }
+        .hover-effect-3d {
+            @extend %cover;
+            z-index: 100;
+        }
+    }
+
+
+}
+
+// section.mockups {
+//     padding: 0;
+//     line-height: 0;
+//     div {
+//         width: calc(50% - #{gs(2)});
+//         margin: gs(1);
+//         display: inline-block;
+//         overflow: hidden;
+//         height: gs(10);
+//         @include background-size(cover);
+//     }
+//     .mockup1 { background-image: image-url("work/sparkpass/mockup1.jpg"); }
+//     .mockup2 { background-image: image-url("work/sparkpass/mockup2.jpg"); }
+// }
+
+@keyframes flashBolt {
+    99% {
+        fill: col('sparkpass-yellow');
+    }
+    100% {
+        fill: col('sparkpass-blue');
+    }
+}
+
+@keyframes flashBack {
+    0%, 9%, 13%, 49%, 62%, 99% {
+        background-color: col('sparkpass-blue');
+    }
+    10%, 12%, 50%, 61%, 100% {
+        background-color: col('sparkpass-yellow');
+    }
+}

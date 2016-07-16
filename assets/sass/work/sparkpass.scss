@@ -1,0 +1,19 @@
+@import "../lib/include";
+section.title {
+    background-image: image-url("work/sparkpass/mockup-1.jpg");
+    @include background-size(cover);
+
+    h1 {
+        color: col('sparkpass-yellow');
+    };
+}
+.overview {
+    img {
+        height: gs(1);
+    }
+}
+.square.mockup {
+    background-image: image-url("work/sparkpass/mockup-2.jpg");
+    @include background-size(cover);
+    background-position: center left 20%;
+}

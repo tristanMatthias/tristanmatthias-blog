@@ -1,0 +1,10 @@
+mixin arrow(color, direction)
+    svg(class="arrow #{color} #{direction}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px" height="7px" viewBox="0 0 45 7" style="enable-background:new 0 0 45 7;" xml:space="preserve")
+        polygon(fill="#584A9C" points="45,3.5 39,0 39,3 0,3 0,4 39,4 39,7 ")
+        
+        
+mixin returnTop(color)
+    .returnTop(onclick="window.scrollTo(0,0)")
+        +arrow('bg-' + color,'up')
+        a.button(class="c-#{color}") Back to top
+        hr(class="bg-#{color}")

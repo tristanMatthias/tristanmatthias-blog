@@ -1,0 +1,10 @@
+@import "../lib/include";
+
+body {
+    background-color: col('vuid-blue');
+    color: col('beige');
+    @include animation(none);
+}
+body, footer {
+    background-color: col('vuid-blue') !important;
+}

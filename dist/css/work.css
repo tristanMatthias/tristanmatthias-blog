@@ -1,0 +1,267 @@
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section.top h2 {
+  font-size: 2.4rem;
+}
+
+h1 span:last-child:after {
+  font-size: 4.8rem;
+}
+
+section.top h2 {
+  font-weight: 500;
+}
+
+h1 span:nth-child(1), h1 span:nth-child(2) {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-animation: slide-down-in 0.5s forwards;
+  -webkit-animation: slide-down-in 0.5s forwards;
+  animation: slide-down-in 0.5s forwards;
+}
+
+body {
+  color: #B6C7BE;
+}
+
+h1 {
+  margin-top: 8rem;
+  width: 20rem;
+  line-height: 6rem;
+  position: relative;
+  color: #B6C7BE;
+}
+h1 span:nth-child(1), h1 span:nth-child(2) {
+  position: absolute;
+  -moz-animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+h1 span:nth-child(1) {
+  margin-top: -6rem;
+}
+h1 span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #52D98C;
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  overflow: hidden;
+  -moz-animation: h1 1s forwards;
+  -webkit-animation: h1 1s forwards;
+  animation: h1 1s forwards;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+h1 span:last-child:after {
+  content: "Featured Works";
+  color: #FCFAED;
+  line-height: 6rem;
+  position: absolute;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: rotate(45deg) translate(-14.2%, -23.7%);
+  -ms-transform: rotate(45deg) translate(-14.2%, -23.7%);
+  -webkit-transform: rotate(45deg) translate(-14.2%, -23.7%);
+  transform: rotate(45deg) translate(-14.2%, -23.7%);
+  -moz-animation: h1-mask 1s forwards;
+  -webkit-animation: h1-mask 1s forwards;
+  animation: h1-mask 1s forwards;
+  -moz-animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+section.top {
+  height: 16rem;
+}
+section.top h2 {
+  color: #B6C7BE;
+  font-family: "Karla", sans-serif;
+  float: right;
+  width: 50%;
+  position: relative;
+  margin: 0;
+  margin-top: -7rem;
+  line-height: 4.8rem;
+}
+
+section.work {
+  position: relative;
+  font-size: 0;
+  perspective: 1500px;
+  z-index: 100;
+}
+section.work .grid-item, section.work .placeholder {
+  width: calc((100% - 4rem) / 3);
+  height: 30.6rem;
+}
+section.work .grid {
+  position: relative;
+  -moz-transition: all 0.5s cubic-bezier(0, 0, 0.25, 1);
+  -o-transition: all 0.5s cubic-bezier(0, 0, 0.25, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.25, 1);
+  transition: all 0.5s cubic-bezier(0, 0, 0.25, 1);
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+section.work .grid .grid-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+section.work .grid .grid-item h4 {
+  border-top: #52D98C;
+}
+section.work .grid .grid-item p {
+  color: #B6C7BE;
+}
+section.work .grid .grid-item .preview {
+  width: 100%;
+}
+section.work .grid .grid-item .content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+section.work .grid .grid-item:nth-child(3n-1) {
+  margin: 2rem;
+  margin-top: 0;
+}
+section.work .grid .grid-item.active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+section.work .grid .grid-item:hover .content {
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+section.work .grid .placeholder {
+  pointer-events: none;
+  position: absolute;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -moz-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+section.work .grid .placeholder > div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+section.work .grid .placeholder .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+section.work .grid .placeholder .back {
+  -moz-transform: rotateY(180deg) translate3d(0, 0, 0);
+  -ms-transform: rotateY(180deg) translate3d(0, 0, 0);
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 0);
+  transform: rotateY(180deg) translate3d(0, 0, 0);
+}
+section.work .grid .placeholder.active {
+  -moz-transform: translateZ(1500px) rotateY(-179.9deg);
+  -ms-transform: translateZ(1500px) rotateY(-179.9deg);
+  -webkit-transform: translateZ(1500px) rotateY(-179.9deg);
+  transform: translateZ(1500px) rotateY(-179.9deg);
+}
+section.work.open .grid {
+  -moz-transform: translateZ(-1500px);
+  -ms-transform: translateZ(-1500px);
+  -webkit-transform: translateZ(-1500px);
+  transform: translateZ(-1500px);
+}
+section.work.open .grid .grid-item {
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+  overflow-y: auto;
+  height: 0;
+  visibility: hidden;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  z-index: 100;
+}
+.modal.show {
+  height: 100%;
+  visibility: visible;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+@keyframes h1 {
+  0% {
+    width: 0;
+    height: 2px;
+  }
+  50% {
+    width: 20rem;
+    height: 2px;
+  }
+  100% {
+    width: 20rem;
+    height: 4rem;
+  }
+}
+@keyframes h1-mask {
+  0% {
+    margin-left: 2rem;
+    margin-top: -2rem;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  100% {
+    margin: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}

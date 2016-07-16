@@ -1,0 +1,12 @@
+svg.arrow {
+    background-color: transparent;
+    @each $color, $val in $colors {
+        &.bg-#{$color} polygon {
+            fill: #{$val};
+        }
+    }
+
+    &.up {
+        @include transform(rotate(-90deg));
+    }
+}

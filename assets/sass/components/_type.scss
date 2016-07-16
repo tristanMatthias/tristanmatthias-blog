@@ -1,0 +1,94 @@
+html, body {
+    font-size: $f-base;
+    font-family: $f-stack;
+    line-height: $f-line;
+    color: col('text');
+    cursor: auto;
+    font-weight: 500;
+}
+
+// ---------------------------------- Sizes
+.fs-tiny    { @extend %fs-tiny; }
+.fs-small   { @extend %fs-small; }
+.fs-main    { @extend %fs-main; }
+.fs-large   { @extend %fs-large; }
+.fs-grand   { @extend %fs-grand; }
+.fs-huge    { @extend %fs-huge; }
+.fs-massive { @extend %fs-massive; }
+.fs-jumbo   { @extend %fs-jumbo; }
+
+div,p,a,li {
+    @extend %fs-main;
+    line-height: 2.7rem;
+}
+
+// ---------------------------------- Weights
+.fw-thin { @extend %fw-thin; }
+.fw-med { @extend %fw-med; }
+.fw-bold { @extend %fw-bold; }
+
+
+// ---------------------------------- Families
+.ff-main { font-family: $f-stack; }
+.ff-header { font-family: $f-stack-headings; }
+h1, h2 {
+    font-family: $f-stack-headings;
+    @extend %fw-bold;
+}
+h3, h4 {
+    font-family: $f-stack;
+    @extend %fw-bold;
+}
+h5 {
+    font-family: $f-stack-headings;
+    font-style: italic;
+}
+
+// ---------------------------------- Headings
+h1 {
+    @extend %fs-jumbo;
+    color: col('main');
+    line-height: 13rem;
+}
+h2 {
+    @extend %fs-massive;
+    line-height: gs(1.5);
+}
+
+h4 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-style: 1.5rem;
+    line-height: gs(2/3);
+    border-top: 2px solid;
+}
+h5 {
+    color: col('grey-light');
+}
+
+
+
+// ---------------------------------- Misc
+a {
+    text-decoration: none;
+    color: inherit;
+}
+hr {
+    border: 0;
+    background-color: col('main');
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    width: gs(4);
+}
+
+ul.list {
+    li {
+        &:before {
+            content: "\2014";
+            margin-left: -3rem;
+            margin-right: 3rem;
+        }
+        margin-bottom: 1rem;
+    }
+}

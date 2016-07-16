@@ -1,0 +1,21 @@
+section.title {
+    height: gs(12);
+    &:before {
+        content:"";
+        @extend %cover;
+        width: 0;
+        @include animation(swipe-right 1s forwards);
+        @include animation-delay(1.5s);
+        z-index: -1;
+    }
+
+    h2 {
+        position: absolute;
+        left: gs(1/2);
+        bottom: gs(1);
+    }
+    h1[class^='bg-'] {
+        line-height: 11rem;
+        padding: 0 1rem;
+    }
+}

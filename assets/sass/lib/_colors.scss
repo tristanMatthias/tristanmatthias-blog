@@ -1,0 +1,49 @@
+$colors: (
+
+    'purple':         #584A9C,
+    'purple-watermark': #C9C3CA,
+    'beige':          #FCFAED,
+    'white':          #FFFFFF,
+    'green':          #52D98C,
+    'teal':          #4BC8CC,
+    'red':          #C25746,
+
+    'white-off': #f8f8f8,
+    'grey-lightest': #f0f0f0,
+    'grey-light': #bbb,
+
+
+    'vuid-blue':      #5696D1,
+
+    'sparkpass-blue': #0B95D0,
+    'sparkpass-yellow': #D7D67A,
+
+    'elastice-lavendar': #DBD9EB,
+
+    'skydeck-black': #24211C,
+    'skydeck-gold': #D19E32,
+
+    'adobe-magazine-blue': #46A5C8
+
+);
+
+$colors: map-set($colors, 'text', col('purple'));
+$colors: map-set($colors, 'main', col('purple'));
+
+@each $color, $val in $colors {
+    %c-#{$color}-hover {
+        color: #{$val};
+        border-color: #{$val};
+        &:hover,&:focus {
+            color: #{lighten($val,8%)};
+            border-color: #{lighten($val,8%)};
+        }
+        &:active {
+            color: #{ darken($val,8%)};
+            border-color: #{ darken($val,8%)};
+        }
+        h4 {
+            border-top-color: #{val};
+        }
+    }
+}
