@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp build && http-server dist"
+    "start": "gulp build && node ."
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,11 @@
   "author": "Tristan Matthias",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
     "gulp-connect": "^4.1.0",
     "gulp-jade": "^1.1.0",
-    "http-server": "^0.9.0"
+    "serve-static": "^1.11.1"
   }
 }
