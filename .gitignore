@@ -14,7 +14,7 @@
 /tmp
 
 ## Ignore all generated files
-# /dist
+/dist
 /.mimosa
 /coverage
 /rdoc
