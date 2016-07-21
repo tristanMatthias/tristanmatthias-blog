@@ -74,5 +74,6 @@ gulp.task('watch', function () {
 });
 
 gulp.task('build', ['jade', 'js', 'compass', 'images']);
-gulp.task('default', ['build', 'watch', 'webserver-dev']);
+// gulp.task('default', ['build', 'watch', 'webserver-dev']);
+gulp.task('default', ['build', 'watch']);
 

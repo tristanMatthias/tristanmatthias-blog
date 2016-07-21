@@ -89,10 +89,10 @@ body {
 
 @media #{$large-up} {
     .wrapper {
-        width: pgs(4);
+        width: calc(100%/#{$page-grid-cols} * 4);
     }
     .square {
-        width: pgs(2);
+        width: 50%;
         height: pgs(2);
         min-height: pgs(2);
     }

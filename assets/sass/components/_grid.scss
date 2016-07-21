@@ -15,7 +15,7 @@
             background-color: rgba(col('grey-light'), 0.2);
             @for $i from 1 to $page-grid-cols {
                 &:nth-child(#{$i}) {
-                    left: calc(#{pgs($i)} - 1px);
+                    left: calc(((100%/#{$page-grid-cols}) * #{$i}) - 1px);
                 }
             }
             z-index: $page-grid-z;
