@@ -25,11 +25,6 @@ azure_error
 what
 *.sublime-workspace
 
-# Output folder
-/public
-#/dist
-/.mimosa/require/tracking.json
-
 # Numerous always-ignore extensions
 *~
 *.diff
