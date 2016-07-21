@@ -1,0 +1,56 @@
+extends ../templates/master.jade
+
+append css
+    link(rel="stylesheet", href="#{cssPath}index.css")
+block body    
+    .wrapper
+        section.title.por
+            h1
+                span.db.ani-spin-y.ani-delay-2 Tristan
+                span.db.ani-spin-y.ani-delay-2 Matthias
+            h2.c-purple.fs-large.ff-main.ani-slide-down.ani-delay-3 Front end developer &amp; designer
+            
+        section.works
+            .square.bg-purple.c-beige#sq-intro
+                h2 Driven 
+                    br
+                    | by passion 
+                    br
+                    | &amp; curiosity.
+
+                p.ta-r 
+                    span With over 6 years adding value in IT companies, I work as a senior developer and
+                    span  designer in the modern web space.
+
+            .square.bg-beige#sq-skills
+                h4 Skills
+                //- TODO: FIll out designer developer
+                h2.c-purple-watermark Designer
+                h2.c-purple-watermark Developer
+
+
+            .square.above-grid#sq-vuid-logo
+                img.logo(src="#{imgPath}work/vuid/logo.svg", alt="Vuid")
+            
+            
+            each job, name in work
+                if (job.home)
+                    a.square(
+                        href="/work/#{name}" 
+                        id="sq-#{name}" 
+                        class= [
+                            'bg-' + job.home.background,
+                            "c-" + job.home.color
+                        ]
+                    )
+                        h4= job.home.h4 || job.name
+                        if (job.home.logo)
+                            img.align-center.logo(src="#{imgPath}work/#{name}/#{job.home.logo == true ? 'logo.svg' : job.home.logo}")
+                        if (job.home.heading)
+                            h2= job.home.heading
+                        if (job.home.description)
+                            p= job.description
+                        
+                        +arrow('bg-' + job.home.color)
+
+    +returnTop('purple')

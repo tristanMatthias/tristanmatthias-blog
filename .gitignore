@@ -14,6 +14,7 @@
 /tmp
 
 ## Ignore all generated files
+/dist
 /.mimosa
 /coverage
 /rdoc
@@ -24,11 +25,6 @@ npm-debug.log
 azure_error
 what
 *.sublime-workspace
-
-# Output folder
-/public
-#/dist
-/.mimosa/require/tracking.json
 
 # Numerous always-ignore extensions
 *~

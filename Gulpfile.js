@@ -11,13 +11,10 @@ var paths = {
     js: 'assets/js/**/*.js',
     sass: 'assets/sass/**/*.scss',
     images: 'assets/images/**/*',
+    copy: [
+        // "app.js"
+    ]
 }
-
-var constants = {
-    API_HOST: (process.env.NODE_ENV == "production") ? "http://lifebalance-api.herokuapp.com/" : "http://localhost:8001/",
-    API_URL: (process.env.NODE_ENV == "production") ? "http://lifebalance-api.herokuapp.com/api/v1/" : "http://localhost:8001/api/v1/"
-}
-
 
 gulp.task('webserver-dev', function() {
     connect.server({
@@ -27,6 +24,12 @@ gulp.task('webserver-dev', function() {
     });
 });
 
+gulp.task('copy', function() {
+    var stream = gulp.src(paths.copy)
+        .pipe(connect.reload())
+        .pipe(gulp.dest(dist));
+    return stream;
+});
 
 gulp.task('js', function() {
     var stream = gulp.src(paths.js)
