@@ -1,21 +1,43 @@
 section.title {
-    height: pgs(2.5);
     &:before {
-        content:"";
         @extend %cover;
-        width: 0;
-        @include animation(swipe-right 1s forwards);
-        @include animation-delay(1.5s);
-        z-index: -1;
     }
+}
 
-    h2 {
-        position: absolute;
-        left: gs(1/2);
-        bottom: gs(1);
+
+@media #{$tiny-up} {
+    section.title {
+        height: gs(6);
+        &:before {
+            content:"";
+            width: 0;
+            @include animation(swipe-right 1s forwards);
+            @include animation-delay(1.5s);
+            z-index: -1;
+            background-position: center;
+            @include background-size(cover);
+        }
+
+        h2 {
+            position: absolute;
+            left: gs(1/2);
+            bottom: gs(1);
+        }
+        h1[class^='bg-'] {
+            line-height: 11rem;
+            padding: 0 1rem;
+        }
     }
-    h1[class^='bg-'] {
-        line-height: 11rem;
-        padding: 0 1rem;
+}
+
+@media #{$tiny-up} and #{$landscape} {
+    section.title {
+        height: gs(4);
+    }
+}
+
+@media #{$large-up} {
+    section.title {
+        height: pgs(2);
     }
 }

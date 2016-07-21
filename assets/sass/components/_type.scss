@@ -19,11 +19,6 @@ html, body {
 .fs-massive { @extend %fs-massive; }
 .fs-jumbo   { @extend %fs-jumbo; }
 
-div,p,a,li {
-    @extend %fs-main;
-    line-height: 2.7rem;
-}
-
 // ---------------------------------- Weights
 .fw-thin { @extend %fw-thin; }
 .fw-med { @extend %fw-med; }
@@ -45,29 +40,6 @@ h5 {
     font-family: $f-stack-headings;
     font-style: italic;
 }
-
-// ---------------------------------- Headings
-h1 {
-    @extend %fs-jumbo;
-    color: col('main');
-    line-height: 13rem;
-}
-h2 {
-    @extend %fs-massive;
-    line-height: gs(1.5);
-}
-
-h4 {
-    display: inline-block;
-    text-transform: uppercase;
-    font-style: 1.5rem;
-    line-height: gs(2/3);
-    border-top: 2px solid;
-}
-h5 {
-    color: col('grey-light');
-}
-
 
 
 // ---------------------------------- Misc
@@ -94,3 +66,54 @@ ul.list {
         margin-bottom: 1rem;
     }
 }
+
+
+// ---------------------------------- Responsive sizes
+@media #{$tiny-up} {
+    div,p,a,li {
+        font-size: $fs-main;
+        line-height: 2.7rem;
+    }
+    h1 {
+        font-size: $fs-huge;
+        color: col('main');
+        line-height: $fs-massive;
+    }
+    h2 {
+        font-size: $fs-grand;
+        line-height: $fs-huge;
+    }
+
+    h4 {
+        display: inline-block;
+        text-transform: uppercase;
+        line-height: gs(2/3);
+        border-top: 2px solid;
+    }
+    h5 {
+        color: col('grey-light');
+    }
+}
+
+@media #{$large-up} {
+    div,p,a,li {
+        font-size: $fs-large;
+        line-height: $fs-large * 1.666;
+    }
+    h1 {
+        font-size: $fs-massive;
+        line-height: $fs-massive * 1.5;
+    }
+}
+
+@media #{$xlarge-up} {
+    h1 {
+        font-size: $fs-jumbo;
+        line-height: $fs-jumbo;
+    }
+    h2 {
+        font-size: $fs-huge;
+        line-height: $fs-massive;
+    }
+}
+

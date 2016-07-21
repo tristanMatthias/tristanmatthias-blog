@@ -1,8 +1,14 @@
 footer.bottom {
-    height: pgs(1);
+    height: gs(4);
 
     svg {
         height: gs(1);
         bottom: gs(1);
+    }
+}
+
+@media #{$large-up} {
+    footer.bottom {
+        height: pgs(1);
     }
 }

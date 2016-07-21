@@ -4,14 +4,23 @@ $f-line: 1.5em;
 $f-stack: 'Karla', sans-serif;
 $f-stack-headings: 'Playfair Display', serif;
 // -------------------------------------------------------------------- Sizes
-%fs-tiny  { font-size: 1rem;   }
-%fs-small { font-size: 1.2rem; }
-%fs-main  { font-size: 1.8rem; }
-%fs-large { font-size: 1.8rem; }
-%fs-grand { font-size: 2.4rem; }
-%fs-huge  { font-size: 3.6rem; }
-%fs-massive  { font-size: 4.8rem; }
-%fs-jumbo  { font-size: 10.8rem; }
+$fs-tiny: 1rem;
+$fs-small: 1.2rem;
+$fs-main: 1.5rem;
+$fs-large: 1.8rem;
+$fs-grand: 2.4rem;
+$fs-huge: 3.6rem;
+$fs-massive: 4.8rem;
+$fs-jumbo: 10.8rem;
+
+%fs-tiny  { font-size: $fs-tiny  }
+%fs-small { font-size: $fs-small; }
+%fs-main  { font-size: $fs-main; }
+%fs-large { font-size: $fs-large; }
+%fs-grand { font-size: $fs-grand; }
+%fs-huge  { font-size: $fs-huge; }
+%fs-massive  { font-size: $fs-massive; }
+%fs-jumbo  { font-size: $fs-jumbo; }
 
 // -------------------------------------------------------------------- Sizes
 %fw-thin  { font-weight: 100; }

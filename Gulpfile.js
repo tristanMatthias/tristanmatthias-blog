@@ -23,7 +23,7 @@ gulp.task('webserver-dev', function() {
     connect.server({
         root: "dist",
         livereload: true,
-        port: 9998
+        port: 9997
     });
 });
 
