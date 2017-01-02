@@ -13,4 +13,4 @@ app.use(function*(next) {
 
 app.use(serve('./dist'));
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
