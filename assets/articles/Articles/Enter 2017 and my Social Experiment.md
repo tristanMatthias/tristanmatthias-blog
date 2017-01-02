@@ -10,7 +10,7 @@ Last year, I placed a major focus on my grounding an internal sense of masculini
 ## The over-arching direction
 After much thought, meditation, and general soul searching over the past week, **I’ve taken this year to work on my communication**. I mean this in every sense of the word, be it in my relationship, at work, public speaking, to friends, or with myself.
 
-I feel communication is at the very essence of how we experience life. The blog articlede we read, those 2 minute videos that stumble onto our Facebook feed, and how we address the person staring back at us in the mirror, define the language surrounding our very thoughts and lives. It’s how this media, those deeper conversations, thought provoking discussions and artwork shapes us in some way, that I think is magical. I’m compelled to discover as much as I’m able to on this wondrous topic.
+I feel communication is at the very essence of how we experience life. The blog articles we read, those 2 minute videos that stumble onto our Facebook feed, and how we address the person staring back at us in the mirror, define the language surrounding our very thoughts and lives. It’s how this media, those deeper conversations, thought provoking discussions and artwork shapes us in some way, that I think is magical. I’m compelled to discover as much as I’m able to on this wondrous topic.
 
 > Language doesn’t describe reality, it defines it.
 
@@ -37,7 +37,7 @@ In spirit of this year’s direction toward better communication there are sever
 - Writing an article weekly
 - Exploring Spanish meetup groups in my new home of Melbourne
 - Attending a standup comedy course
-- Speaking publically on what I’ve learned through keeping this blog
+- Speaking publicly on what I’ve learned through keeping this blog
 
 I vow for a completely transparent and vulnerable process so that perhaps we  all receive something out of these writings and experiments.
 
