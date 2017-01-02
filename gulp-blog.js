@@ -11,17 +11,17 @@ module.exports = function(options) {
 
     stream._transform = (file, unused, callback) => {
 
+        let contents = file.contents.toString();
+        contents = marked(contents);
+        let html = pug.renderFile(pugTemplate, merge({
+            content: contents,
+            title: path.basename(file.path).slice(0,-3).replace()
+        }, pugLocals));
+
         let name = path.basename(file.path).toLowerCase();
         name = name.replace(/\s+/g, '-');
         name = name.replace('.md', '.html');
         file.path = path.join(file.base, name);
-
-
-        let contents = file.contents.toString();
-        contents = marked(contents);
-        let html = pug.renderFile(pugTemplate, merge({
-            content: contents
-        }, pugLocals));
 
         file.contents = new Buffer(html);
 
