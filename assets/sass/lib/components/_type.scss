@@ -78,3 +78,17 @@ ul {
         margin-bottom: 0.5rem;
     }
 }
+
+
+
+
+@media #{$tiny-up} {
+    :root {
+        --fs-base: 10px;
+    }
+}
+@media #{$large-up} {
+    :root {
+        --fs-base: 15px;
+    }
+}
