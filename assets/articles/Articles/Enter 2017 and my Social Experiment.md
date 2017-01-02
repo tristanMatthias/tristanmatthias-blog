@@ -10,37 +10,37 @@ Last year, I placed a major focus on my grounding an internal sense of masculini
 ## The over-arching direction
 After much thought, meditation, and general soul searching over the past week, **I’ve taken this year to work on my communication**. I mean this in every sense of the word, be it in my relationship, at work, public speaking, to friends, or with myself.
 
-I feel communication is at the very essence of how we experience life. The blog articles we read, those 2 minute videos that stumble onto our Facebook feed, to how we address the person staring back at us in the mirror, is the language surrounding our very thoughts and lives. It’s this media, those deeper conversations, thought provoking discussions and artwork that shapes us in some way that I think is magical. I’m compelled to discover as much as I’m able on this wondrous topic.
+I feel communication is at the very essence of how we experience life. The blog articlede we read, those 2 minute videos that stumble onto our Facebook feed, and how we address the person staring back at us in the mirror, define the language surrounding our very thoughts and lives. It’s how this media, those deeper conversations, thought provoking discussions and artwork shapes us in some way, that I think is magical. I’m compelled to discover as much as I’m able to on this wondrous topic.
 
 > Language doesn’t describe reality, it defines it.
 
-*The power of our words, body language, and energy that we give off has such a profound effect on the outcomes of our lives* that I’ve chosen to explore this area more. Admittedly, communication is something I have personally struggled with for a long time, yet something that has always intrigued me.
+*The power of our words, our body language, and the energy that we give off has such a profound effect on the outcomes of our lives* that I’ve chosen to explore this area more. Admittedly, communication is something I have personally struggled with for a long time yet something that has always intrigued me.
 
-I look forward to stumbling down the path in learning how to write, speaking publicly, presenting better, expressing more, and I invite you to join me in this vulnerable journey.
+I look forward to stumbling down the path of learning how to write, speaking publicly, presenting better, and expressing more, and I invite you to join me in this vulnerable journey.
 
 
 ## An open invitation
-Last year I pledged my life to growing in every way and area I possibly can. Honestly, it’s become [a bit of an obsession][1]. It’s my hope that by sharing my writing, ideas and growth publicly I’ll be held accountable by all those who choose to read and follow this adventure. I hereby open myself to all criticisms (although keep them constructive!) from anybody who’s also passionate about building a better world and personal character. The people you surround yourself with shape and determine who you are to a large part, and I welcome all helpful feedback.
+Last year I pledged my life to growing in every way and area I possibly could. Honestly, it’s become [a bit of an obsession][1]. It’s my hope that by sharing my writing, ideas, and growth publicly I’ll be held accountable by all those who choose to read and follow this adventure. I hereby open myself up to all criticisms (although keep them constructive!) from anybody who’s also passionate about building a better world and personal character. The people you surround yourself with shape and determine who you are to a large part and I welcome all helpful feedback.
 
-This blog is an experiment to test and commentate on vulnerability, to create an open discussion for modern spirituality, practical methods to improve our lives and communication, and to explore the process of starting something online.
+This blog is an experiment to test and raise awareness of vulnerability, to create an open discussion for modern spirituality, uncover practical methods to improve our lives and communication, and to explore the process of starting something online.
 
 
 ## My promise to you
-My aim is to create an experimental platform to explore what happens when someone opens themselves to the world. Vulnerability is often seen as a weakness, however I view it as the cornerstone of growth.
+My aim is to create an experimental platform to explore what happens when someone opens themselves up to the world. Vulnerability is often seen as a weakness, however I view it as the cornerstone of growth.
 
 > What would happen if one’s character was able to be shaped by the positive directions of all who viewed it?
 
-The social experiment here is to improve all aspects of myself through experimentation, and open the suggestions to anyone who has something positive to contribute, whilst writing about it along the way.
+The idea? To improve all aspects of myself through experimentation. I’ll be opening up suggestions to anyone who has something positive to contribute, and writing about it along the way.
 
-In spirit of this years direction towards better communication, there are several activities and goals I’ll be working on. Part of working on these areas is writing and sharing them here for all to comment on.
+In spirit of this year’s direction toward better communication there are several activities and goals I’ll be working on. Part of working on these areas is writing and sharing them here for all to comment on.
 
 - Writing an article weekly
 - Exploring Spanish meetup groups in my new home of Melbourne
 - Attending a standup comedy course
-- Giving a public presentation on what I’ve learned through keeping this blog
+- Speaking publically on what I’ve learned through keeping this blog
 
-I vow for a completely transparent and vulnerable process so that perhaps we might all receive something out of these writings and experiments.
+I vow for a completely transparent and vulnerable process so that perhaps we  all receive something out of these writings and experiments.
 
-There you have it. That’s my focus for this year, and this is where it starts. I’m reminded of something a mentor of mine once said, “Language doesn’t describe reality, it defines it”. To me, this begets a need to explore, experiment, and share the experience, and so begins our journey.
+There you have it. That’s my focus for this year and this is where it starts. I’m reminded of something a mentor of mine once said, “Language doesn’t describe reality, it defines it”. To me, this begets a need to explore, experiment, and share the experience, and so begins our journey.
 
 [1]:	obession
