@@ -14,11 +14,12 @@
 
 
     --c-purple: #584A9C;
-    --c-purple-light: #f5f2fa;
+    --c-purple-light: #e9e4f3;
 
 
     --c-grey-dark: #5a547a;
     --c-grey: #dad6e0;
+    --c-white: #f7f7ff;
 
 
     --c-main: var(--c-purple);
@@ -34,6 +35,7 @@
 html {
     font-size: var(--fs-base);
     font-family: var(--ff-body);
+    background-color: var(--c-white);
 }
 
 .f-left { float: left; }
