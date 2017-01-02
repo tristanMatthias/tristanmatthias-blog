@@ -1,0 +1,18 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title
+
+        block styles
+            link(rel="stylesheet", href="/css/base.css")
+    body
+        include ../partials/header
+
+        .content
+            block content
+
+        include ../partials/footer
+
+        script(src="https://use.typekit.net/ess3ihf.js")
+        script try{Typekit.load({ async: true });}catch(e){}

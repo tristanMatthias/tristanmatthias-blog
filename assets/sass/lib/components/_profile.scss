@@ -1,0 +1,14 @@
+.profile.wrapper {
+    margin-top: 8rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--c-main-light);
+    img {
+        border-radius: 50%;
+        width: 4rem;
+        margin-right: 2rem;
+        margin-top: 0.5rem;
+    }
+    small {
+        display: block;
+    }
+}

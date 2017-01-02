@@ -1,19 +1,45 @@
-// Reset everything
-@import "compass/reset";
+@import 'lib/import';
 
-* {box-sizing: border-box; outline: none;}
+:root {
+    --fs-base: 15px;
+    --fs-huge: 3.6rem;
+    --fs-large: 2.4rem;
+    --fs-main: 1.8rem;
+    --fs-small: 1.5rem;
+    --fs-tiny: 1.2rem;
+    --f-line: 1.6;
+
+    --ff-body: "minion-pro-caption", serif;
+    --ff-title: "brandon-grotesque", sans-serif;
+
+
+    --c-purple: #584A9C;
+    --c-purple-light: #f5f2fa;
+
+
+    --c-grey-dark: #5a547a;
+    --c-grey: #dad6e0;
+
+
+    --c-main: var(--c-purple);
+    --c-main-light: var(--c-purple-light);
+    --c-text: var(--c-grey-dark);
+
+
+    --article-width: 740px;
+
+    --border-radius: 0.2rem;
+}
 
 html {
-    font-size: 10px;
-}
-body {
-    background-color: col('grey-bg');
-    font-size: 1vw;
+    font-size: var(--fs-base);
+    font-family: var(--ff-body);
 }
 
-// Include library
-@import "lib/include";
-
-
-// Load components
-@import "components/include";
+.f-left { float: left; }
+.f-right { float: right; }
+.ta-c { text-align: center; }
+.wrapper {
+    max-width: var(--article-width);
+    margin: auto;
+}

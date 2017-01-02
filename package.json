@@ -1,29 +1,30 @@
 {
   "name": "tristan-matthias",
-  "version": "0.0.0",
-  "description": "Personal portfolio for Tristan Matthias",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Blog for Tristan Matthias",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp build && node ."
+    "build": "gulp build",
+    "start": "node app/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@heroku.com:tristanmatthias-blog.git"
-  },
-  "keywords": [
-    "portfolio",
-    "tristan",
-    "matthias"
-  ],
   "author": "Tristan Matthias",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
+    "koa": "^1.2.4",
+    "koa-static": "^2.0.0"
+  },
+  "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-compass": "^2.1.0",
-    "gulp-connect": "^4.1.0",
-    "gulp-jade": "^1.1.0",
-    "serve-static": "^1.11.1"
+    "gulp-connect": "^5.0.0",
+    "gulp-data": "^1.2.1",
+    "gulp-markdown": "^1.2.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "marked": "^0.3.6",
+    "merge": "^1.2.0",
+    "merge2": "^1.0.3",
+    "pug": "^2.0.0-beta6"
   }
 }

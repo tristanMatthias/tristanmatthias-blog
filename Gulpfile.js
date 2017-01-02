@@ -1,81 +1,123 @@
-var path = require('path');
-var gulp = require('gulp');
-var compass = require('gulp-compass');
-var jade = require('gulp-jade');
-var connect = require('gulp-connect');
+// General requirements
+var path     = require('path');
+var merge    = require('merge2');
+// Gulp requirements
+var gulp     = require('gulp');
+var watch    = require('gulp-watch');
+var connect  = require('gulp-connect');
+var pug      = require('gulp-pug');
+var sass     = require('gulp-sass');
+var data     = require('gulp-data');
+var markdown = require('gulp-markdown');
+var blog     = require('./gulp-blog');
 
-var dist = 'dist';
+
+//--------------------------------------------------------------- Main Variables
+var dist = './dist';
 
 var paths = {
-    jade: ['assets/views/pages/**/*.jade'],
-    js: 'assets/js/**/*.js',
+    views: 'assets/views/pages/**/*.pug',
     sass: 'assets/sass/**/*.scss',
-    images: 'assets/images/**/*',
-    copy: [
-        // "app.js"
-    ]
+    articles: {
+        template: 'assets/views/templates/article.pug',
+        files: 'assets/articles/Articles/**/*.md',
+    },
+
+    copy: {
+        'assets/js/**/*.js': path.resolve(dist, 'js'),
+        'assets/images/**/*': path.resolve(dist, 'images')
+    }
 }
 
-gulp.task('webserver-dev', function() {
-    connect.server({
-        root: "dist",
-        livereload: true,
-        port: 9997
-    });
-});
 
-gulp.task('copy', function() {
-    var stream = gulp.src(paths.copy)
-        .pipe(connect.reload())
-        .pipe(gulp.dest(dist));
-    return stream;
-});
+//------------------------------------------------------------------- Main tasks
+gulp.task('default', [
+    'build',
+    'watch',
+    'serve'
+]);
 
-gulp.task('js', function() {
-    var stream = gulp.src(paths.js)
-    .pipe(connect.reload())
-    .pipe(gulp.dest(dist+"/js"));
-    return stream;
-});
+gulp.task('build', [
+    'views',
+    'sass',
+    'copy',
+    'articles'
+]);
 
-gulp.task('compass', function() {
-    gulp.src(paths.sass)
-    .pipe(compass({
-        project: path.join(__dirname, 'assets'),
-        css: path.resolve(__dirname,dist, 'css'),
-        image: "/images/",
-        sass: 'sass'
-    }))
-    .pipe(connect.reload())
-    .pipe(gulp.dest(dist+'/css'));
-});
-
-gulp.task('jade', function() {
-    gulp.src(paths.jade)
-        .pipe(jade({locals:{
-            cssPath: "/css/",
-            jsPath: "/js/",
-            imgPath: "/images/",
-            wwwRoot: (process.env.NODE_ENV == "production") ? "http://tristanmatthias.com" : "http://dev:9998",
-        }}))
-        .pipe(connect.reload())
-        .pipe(gulp.dest(dist));
-})
-
-gulp.task('images', function() {
-    var stream = gulp.src(paths.images)
-        .pipe(connect.reload())
-        .pipe(gulp.dest(dist+'/images'));
-});
-
-
+//------------------------------------------------------------------------ Watch
 gulp.task('watch', function () {
-    gulp.watch(paths.js, ['js']);
-    gulp.watch(paths.sass, ['compass']);
-    gulp.watch("assets/**/*.jade", ['jade']);
-    gulp.watch(paths.images, ['images']);
+    gulp.watch('assets/**/*.pug', ['views', 'articles']);
+    gulp.watch([paths.sass], ['sass']);
+
+    for (var src in paths.copy) {
+        gulp.watch(src, ['copy']);
+    }
+    for (var src in paths.articles) {
+        gulp.watch(paths.articles[src], ['articles']);
+    }
 });
 
-gulp.task('build', ['jade', 'js', 'compass', 'images']);
-gulp.task('default', ['build', 'watch', 'webserver-dev']);
 
+//------------------------------------------------------------------- Dev server
+gulp.task('serve', function() {
+    var s = connect.server({
+        root: 'dist',
+        livereload: true,
+        port: 3000
+    });
+    for (task in paths) {
+        if (typeof paths[task] == "string") {
+            watch(paths[task]).pipe(connect.reload());
+        } else {
+            for (__path in paths[task]) {
+                watch(__path).pipe(connect.reload());
+            }
+        }
+    }
+});
+
+
+//------------------------------------------------------------------------- Copy
+gulp.task('copy', function (cb) {
+    var stream = merge();
+
+    for(var src in paths.copy) {
+        stream.add(
+            gulp.src(src)
+                .pipe(gulp.dest(paths.copy[src]))
+        );
+    }
+    return stream;
+});
+
+
+var pugLocals = {
+    imgPath: '/images/'
+};
+//------------------------------------------------------------------------ Views
+gulp.task('views', function(cb) {
+    return gulp.src(paths.views)
+    .pipe(pug({
+        locals: pugLocals
+    }))
+    .pipe(gulp.dest(path.resolve(dist)));
+});
+
+
+//--------------------------------------------------------------------- Articles
+gulp.task('articles', function(cb) {
+    return gulp.src(paths.articles.files)
+    .pipe(blog({
+        template: paths.articles.template,
+        locals: pugLocals
+    }))
+    .pipe(gulp.dest(path.resolve(dist, 'articles')));
+});
+
+
+//------------------------------------------------------------------------- Sass
+gulp.task('sass', function (cb) {
+    return gulp.src(paths.sass)
+        .pipe(sass())
+        .pipe(gulp.dest(path.resolve(dist,'css')));
+});
