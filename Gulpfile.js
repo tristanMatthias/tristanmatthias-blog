@@ -10,6 +10,7 @@ var sass     = require('gulp-sass');
 var data     = require('gulp-data');
 var markdown = require('gulp-markdown');
 var blog     = require('./gulp-blog');
+var sitemap  = require('gulp-sitemap');
 
 
 //--------------------------------------------------------------- Main Variables
@@ -41,7 +42,8 @@ gulp.task('build', [
     'views',
     'sass',
     'copy',
-    'articles'
+    'articles',
+    'sitemap'
 ]);
 
 //------------------------------------------------------------------------ Watch
@@ -120,4 +122,15 @@ gulp.task('sass', function (cb) {
     return gulp.src(paths.sass)
         .pipe(sass())
         .pipe(gulp.dest(path.resolve(dist,'css')));
+});
+
+//---------------------------------------------------------------------- Sitemap
+gulp.task('sitemap', ['views', 'articles'], function () {
+    gulp.src(dist + '/**/*.html', {
+            read: false
+        })
+        .pipe(sitemap({
+            siteUrl: 'http://www.tristanmatthias.com'
+        }))
+        .pipe(gulp.dest(dist));
 });

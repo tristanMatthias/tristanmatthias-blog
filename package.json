@@ -17,6 +17,7 @@
     "gulp-markdown": "^1.2.0",
     "gulp-pug": "^3.2.0",
     "gulp-sass": "^3.0.0",
+    "gulp-sitemap": "^4.2.0",
     "gulp-watch": "^4.3.11",
     "koa": "^1.2.4",
     "koa-static": "^2.0.0",
