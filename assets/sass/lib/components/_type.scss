@@ -42,6 +42,7 @@ h2 + p {
 p + p {
     margin-top: 2rem;
 }
+a { color: var(--c-main); font-weight: 600; }
 em { font-style: italic; }
 strong { font-weight: 600; }
 small { font-size: var(--fs-tiny);}
