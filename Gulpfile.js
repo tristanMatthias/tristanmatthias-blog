@@ -26,7 +26,8 @@ var paths = {
 
     copy: {
         'assets/js/**/*.js': path.resolve(dist, 'js'),
-        'assets/images/**/*': path.resolve(dist, 'images')
+        'assets/images/**/*': path.resolve(dist, 'images'),
+        'assets/robots.txt': path.resolve(dist)
     }
 }
 
