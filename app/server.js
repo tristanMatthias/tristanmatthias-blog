@@ -7,6 +7,7 @@ const app = koa();
 
 // Serve pages without .html extension
 app.use(function*(next) {
+    if (this.path.slice(-1) == '/') this.path += "index";
     if (this.path.indexOf('.') == -1) this.path += ".html";
     yield next;
 });
