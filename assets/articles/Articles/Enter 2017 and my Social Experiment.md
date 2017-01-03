@@ -1,5 +1,6 @@
 <!--
-date: "02-01-2017"
+title: Enter 2017 and my Social Experiment
+date: 02-01-2017
 -->
 
 ![][image-1]

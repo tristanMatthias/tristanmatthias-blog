@@ -1,11 +1,15 @@
 block vars
+    - if(!meta) meta = {}
 doctype
 html(lang='en')
     head
         meta(charset='utf-8')
-        title Tristan Matthias
-            if title
-                | - #{title}
+        title
+            if meta.title
+                | #{meta.title}
+            else
+                | The Social Experiment
+            |  - Tristan Matthias
         include ../partials/meta
         include ../partials/favicon
 

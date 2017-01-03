@@ -17,18 +17,24 @@ module.exports = function(options) {
         var md = new mkmeta(file.path);
         md.defineTokens('<!--', '-->');
         var meta = md.metadata();
-        console.log(meta);
 
-        contents = marked(contents);
-        let html = pug.renderFile(pugTemplate, merge({
-            content: contents,
-            title: path.basename(file.path).slice(0,-3).replace()
-        }, pugLocals));
+        meta.title = path.basename(file.path).slice(0,-3).replace();
 
         let name = path.basename(file.path).toLowerCase();
         name = name.replace(/\s+/g, '-');
         name = name.replace('.md', '.html');
         file.path = path.join(file.base, name);
+        meta.url = path.join('/articles', name);
+
+        console.log(meta);
+
+        contents = marked(contents);
+        let html = pug.renderFile(pugTemplate, merge({
+            content: contents,
+            meta: meta
+        }, pugLocals));
+
+
 
         file.contents = new Buffer(html);
 
