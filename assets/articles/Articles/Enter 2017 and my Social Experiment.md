@@ -15,9 +15,9 @@ Last year, I placed a major focus on my grounding an internal sense of masculini
 ## The over-arching direction
 After much thought, meditation, and general soul searching over the past week, **I have taken this year to work on my communication**. I mean this in every sense of the word, be it in my relationship, at work, public speaking, to friends, or with myself.
 
-I feel communication is at the very essence of how we experience life. The blog articles we read, those 2 minute videos that stumble onto our Facebook feed, and how we address the person staring back at us in the mirror, define the language surrounding our very thoughts and lives. It’s how this media, those deeper conversations, thought provoking discussions and artwork shapes us that I think is magical. I’m compelled to discover as much as I’m able to on this wondrous topic.s
+I feel communication is at the very essence of how we experience life. The blog articles we read, those 2 minute videos that stumble onto our Facebook feed, and how we address the person staring back at us in the mirror, define the language surrounding our very thoughts and lives. It’s how this media, those deeper conversations, thought provoking discussions and artwork shapes us that I think is magical. I’m compelled to discover as much as I’m able to on this wondrous topic.
 
-> Language doesn’t describe reality, it defines it.
+> “Language doesn’t describe reality, it defines it.”
 
 The power of our words, our body language, and the energy that we give off has such a profound effect on the outcomes of our lives that I’ve chosen to explore this area more. Admittedly, communication is something I have personally struggled with for a long time yet something that has always intrigued me.
 

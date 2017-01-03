@@ -1,3 +1,17 @@
 footer
     .wrapper.ta-c
-        p Thanks for reading
+        .author
+            a(href='/')
+                img.logo(src=`${imgPath}logo.svg`, alt="Tristan Matthias")
+            span Tristan #[br] Matthias
+        .follow
+            span.upper Contact me on
+            a(href="https://twitter.com/tristan_mm")
+                .i.i-twitter
+            a(href="https://dribbble.com/tristan_mm")
+                .i.i-dribbble
+            a(href="mailto:hello@tristanmatthias.com")
+                .i.i-mail
+        .clear
+
+        span.upper.copy Copyright &copy; #[script document.write(new Date().getFullYear())]

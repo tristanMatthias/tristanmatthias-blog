@@ -18,10 +18,12 @@
     --c-purple-light: #e9e4f3;
 
     --c-orange: #e8a409;
+    --c-orange-light: #f4e5c3;
 
 
     --c-grey-dark: #5a547a;
     --c-grey: #c8c3cf;
+    --c-grey-midlight: #dad5df;
     --c-grey-light: #e9e4f0;
     --c-white: #f7f7ff;
 
@@ -29,6 +31,7 @@
     --c-main: var(--c-purple);
     --c-main-light: var(--c-purple-light);
     --c-secondary: var(--c-orange);
+    --c-secondary-light: var(--c-orange-light);
     --c-text: var(--c-grey-dark);
 
 
@@ -45,6 +48,7 @@ html {
 
 .f-left { float: left; }
 .f-right { float: right; }
+.clear { clear: both; }
 .ta-c { text-align: center; }
 .upper { text-transform: uppercase; }
 .wrapper {

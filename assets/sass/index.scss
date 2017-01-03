@@ -1,4 +1,7 @@
 @import 'lib/abstracts/import';
+body .content {
+    padding: 0;
+}
 h1.wrapper {
     letter-spacing: 2px;
     font-size: 7.2rem;
@@ -29,6 +32,7 @@ section.latest {
 @media #{$tiny-up} {
     h1.wrapper {
         font-size: 6rem;
+        margin-top: -1.7rem;
     }
     section {
         padding: 0 4rem;
@@ -38,5 +42,6 @@ section.latest {
 @media #{$large-up} {
     h1.wrapper {
         font-size: 7.2rem;
+        margin-top: -1.4rem;
     }
 }

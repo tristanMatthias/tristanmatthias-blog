@@ -3,6 +3,10 @@ html * {
     font-family: var(--ff-body);
     line-height: var(--f-line);
     color: var(--c-text);
+    &::selection {
+        background: var(--c-main);
+        color: var(--c-white);
+    }
 }
 
 html {
@@ -15,6 +19,8 @@ html {
 
 .ff-body { font-family: var(--ff-body); }
 .ff-title { font-family: var(--ff-title); }
+.c-main { color: var(--c-main); }
+.c-secondary { color: var(--c-secondary);  }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--ff-title);
@@ -81,9 +87,9 @@ blockquote {
     margin: 4rem;
     margin-left: -2rem;
     margin-right: 0;
-    background-color: var(--c-main-light);
+    background-color: var(--c-secondary-light);
     padding: 2rem;
-    border-left: 4px solid var(--c-main);
+    border-left: 4px solid var(--c-secondary);
     border-radius: var(--border-radius);
 
     &, p {
