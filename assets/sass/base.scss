@@ -1,6 +1,8 @@
 @import 'lib/import';
 
 :root {
+    --ani-time: 0.35s;
+
     --fs-huge: 3.6rem;
     --fs-large: 2.4rem;
     --fs-main: 1.8rem;
@@ -15,14 +17,18 @@
     --c-purple: #584A9C;
     --c-purple-light: #e9e4f3;
 
+    --c-orange: #e8a409;
+
 
     --c-grey-dark: #5a547a;
     --c-grey: #c8c3cf;
+    --c-grey-light: #e9e4f0;
     --c-white: #f7f7ff;
 
 
     --c-main: var(--c-purple);
     --c-main-light: var(--c-purple-light);
+    --c-secondary: var(--c-orange);
     --c-text: var(--c-grey-dark);
 
 
@@ -40,6 +46,7 @@ html {
 .f-left { float: left; }
 .f-right { float: right; }
 .ta-c { text-align: center; }
+.upper { text-transform: uppercase; }
 .wrapper {
     max-width: var(--article-width);
     margin: auto;

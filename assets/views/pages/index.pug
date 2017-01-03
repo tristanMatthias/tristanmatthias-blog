@@ -1,4 +1,19 @@
 extends ../templates/main
 
-append content
-    
+append vars
+    -skipFooter = true
+    -skipHeader = true
+
+append styles
+    link(rel="stylesheet", href="css/index.css")
+append outerContent
+    h1.upper.ta-c.wrapper The social experiment
+
+    section.latest
+        .wrapper
+            time.new Jan 2, 2017
+            a(href="/articles/enter-2017-and-my-social-experiment")
+                h2 Enter 2017 and my Social Experiment
+            p What would happen if one’s character was able to be shaped by the positive directions of all who viewed it? This is a question I asked myself at the beginning of this year, and sparked the inspiration for me begin a social experiment…
+
+    section.articles

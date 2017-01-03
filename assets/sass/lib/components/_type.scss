@@ -4,6 +4,15 @@ html * {
     line-height: var(--f-line);
     color: var(--c-text);
 }
+
+html {
+    opacity: 0;
+    transition: opacity var(--ani-time);
+    &.wf-active {
+        opacity: 1;
+    }
+}
+
 .ff-body { font-family: var(--ff-body); }
 .ff-title { font-family: var(--ff-title); }
 
@@ -30,7 +39,18 @@ time {
     font-weight: 600;
     letter-spacing: 2px;
     margin: 2rem 0;
-    text-align: right;
+    &.new {
+        color: var(--c-text);
+        &:before {
+            content: "New!";
+            font-weight: 600;
+            background-color: var(--c-secondary);
+            color: white;
+            padding: 0.09rem 0.4rem;
+            border-radius: var(--border-radius);
+            margin-right: 0.5rem;
+        }
+    }
 }
 
 p {
@@ -42,7 +62,9 @@ h2 + p {
 p + p {
     margin-top: 2rem;
 }
-a { color: var(--c-main); font-weight: 600; }
+a {
+    color: var(--c-secondary);
+}
 em { font-style: italic; }
 strong { font-weight: 600; }
 small { font-size: var(--fs-tiny);}

@@ -1,6 +1,10 @@
+<!--
+date: "02-01-2017"
+-->
+
 ![][image-1]
 # Enter 2017 and my Social Experiment
-<time> 2nd Jan 2017 </time>
+<time> Jan 2, 2017 </time>
 
 What would happen if one’s character was able to be shaped by the positive directions of all who viewed it? This is a question I asked myself at the beginning of this year, and sparked the inspiration for me begin a social experiment…
 

@@ -1,6 +1,7 @@
 const Stream = require('stream');
 const path   = require('path');
 const marked = require('marked');
+const mkmeta = require('marked-metadata');
 const pug    = require('pug');
 const merge  = require('merge');
 
@@ -12,6 +13,12 @@ module.exports = function(options) {
     stream._transform = (file, unused, callback) => {
 
         let contents = file.contents.toString();
+
+        var md = new mkmeta(file.path);
+        md.defineTokens('<!--', '-->');
+        var meta = md.metadata();
+        console.log(meta);
+
         contents = marked(contents);
         let html = pug.renderFile(pugTemplate, merge({
             content: contents,

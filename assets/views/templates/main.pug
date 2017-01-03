@@ -14,12 +14,15 @@ html(lang='en')
         block styles
             link(rel="stylesheet", href="/css/base.css")
     body
-        include ../partials/header
+        unless skipHeader
+            include ../partials/header
 
+        block outerContent
         .content
             block content
 
-        include ../partials/footer
+        unless skipFooter
+            include ../partials/footer
 
         script(src="https://use.typekit.net/ess3ihf.js")
         script try{Typekit.load({ async: true });}catch(e){}
