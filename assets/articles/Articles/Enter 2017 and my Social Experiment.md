@@ -8,10 +8,10 @@ What would happen if one’s character was able to be shaped by the positive dir
 
 Last year, I placed a major focus on my grounding an internal sense of masculinity, directing my search for significance within, not externally, and solidifying a safer, more solid space for me to operate from. A recent move to Melbourne along with the new job and relationship has given me a drive to grow and experiment even further.
 
-## The over-arching directioin
-After much thought, meditation, and general soul searching over the past week, **I’ve taken this year to work on my communication**. I mean this in every sense of the word, be it in my relationship, at work, public speaking, to friends, or with myself.
+## The over-arching direction
+After much thought, meditation, and general soul searching over the past week, **I have taken this year to work on my communication**. I mean this in every sense of the word, be it in my relationship, at work, public speaking, to friends, or with myself.
 
-I feel communication is at the very essence of how we experience life. The blog articles we read, those 2 minute videos that stumble onto our Facebook feed, and how we address the person staring back at us in the mirror, define the language surrounding our very thoughts and lives. It’s how this media, those deeper conversations, thought provoking discussions and artwork shapest us that I think is magical. I’m compelled to discover as much as I’m able to on this wondrous topic.s
+I feel communication is at the very essence of how we experience life. The blog articles we read, those 2 minute videos that stumble onto our Facebook feed, and how we address the person staring back at us in the mirror, define the language surrounding our very thoughts and lives. It’s how this media, those deeper conversations, thought provoking discussions and artwork shapes us that I think is magical. I’m compelled to discover as much as I’m able to on this wondrous topic.s
 
 > Language doesn’t describe reality, it defines it.
 
@@ -21,7 +21,7 @@ I look forward to stumbling down the path of learning how to write, speaking pub
 
 
 ## An open invitation
-Last year I pledged my life to growing in every way and area I possibly could. Honestly, it’s become [a bit of an obsession][1]. It’s my hope that by sharing my writing, ideas, and growth publicly, I’ll be held accountable by all those who choose to read and follow this adventure. I hereby open myself up to all criticisms (although keep them constructive!) from anybody who’s also passionate about building a better world and personal character. The people you surround yourself with shape and determine who you are to a large part and I an welcoming all helpful feedback.
+Last year I pledged my life to growing in every way and area I possibly could. Honestly, it’s become [a bit of an obsession][1]. It’s my hope that by sharing my writing, ideas, and growth publicly, I’ll be held accountable by all those who choose to read and follow this adventure. I hereby open myself up to all criticisms (although keep them constructive!) from anybody who’s also passionate about building a better world and personal character. The people you surround yourself with shape and determine who you are to a large part and I am welcoming all helpful feedback.
 
 This blog is an experiment to test and raise awareness of vulnerability, to create an open discussion for modern spirituality, uncover practical methods to improve our lives and communication, and to explore the process of starting something online.
 
