@@ -1,5 +1,6 @@
 block vars
     - if(!meta) meta = {}
+    - if (!meta.description) meta.description = 'What would happen if one’s character was able to be shaped by the positive directions of all who viewed it?'
 doctype
 html(lang='en')
     head
@@ -10,13 +11,48 @@ html(lang='en')
             else
                 | The Social Experiment
             |  - Tristan Matthias
+
         include ../partials/meta
+
         include ../partials/favicon
-
-
 
         block styles
             link(rel="stylesheet", href="/css/base.css")
+
+        script(type="application/ld+json").
+            {
+                "@context": "http://schema.org",
+                "@type": "NewsArticle",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "#{meta.url}"
+                },
+                "headline": "#{meta.title}",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "http://www.tristanmatthias.com/images/profile.jpg",
+                    "height": 1113,
+                    "width": 1113
+                },
+                "datePublished": "2015-02-05T08:00:00+08:00",
+                "dateModified": "2015-02-05T09:20:00+08:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "Tristan Matthias"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "TM Designs",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://www.tristanmatthias.com/images/profile.jpg",
+                        "width": 1113,
+                        "height": 1113
+                    }
+                },
+                "description": "#{meta.description}"
+            }
+
     body
         unless skipHeader
             include ../partials/header
