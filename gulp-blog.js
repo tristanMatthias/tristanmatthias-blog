@@ -26,7 +26,6 @@ module.exports = function(options) {
         file.path = path.join(file.base, name);
         meta.url = path.join('/articles', name);
 
-        console.log(meta);
 
         contents = marked(contents);
         let html = pug.renderFile(pugTemplate, merge({

@@ -3,7 +3,7 @@ title: Enter 2017 and my Social Experiment
 date: 02-01-2017
 -->
 
-![][image-1]
+![Experiments][image-1]
 # Enter 2017 and my Social Experiment
 <time> Jan 2, 2017 </time>
 

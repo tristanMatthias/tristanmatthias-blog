@@ -2,6 +2,7 @@
 
 * Confessions of a personal growth addict
 	* Meditation
+* The power of environment 
 * Starting a meetup
 * How to see the future
 	* Meditation practice on connecting to the future version of who you want to be
