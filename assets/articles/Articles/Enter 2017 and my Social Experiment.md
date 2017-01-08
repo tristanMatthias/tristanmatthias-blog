@@ -7,7 +7,7 @@ date: 02-01-2017
 # Enter 2017 and my Social Experiment
 <time> Jan 2, 2017 </time>
 
-What would happen if one’s character was able to be shaped by the positive directions of all who viewed it? This is a question I asked myself at the beginning of this year, and sparked the inspiration for me begin a social experiment…
+What would happen if one’s character was able to be shaped by the positive directions of all who viewed it? This is a question I asked myself at the beginning of this year, eand sparked the inspiration for me begin a social experiment…
 
 2017 for me is a chance for propelling myself into the new arena of life, taking all the lessons learned over my time here on this planet, and really applying them in the external world. *This blog is an attempt to document this, and give some of the control over where I go in life to the choice of the readers.*
 
