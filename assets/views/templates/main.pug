@@ -76,3 +76,7 @@ html(lang='en')
 
           ga('create', 'UA-41808476-2', 'auto');
           ga('send', 'pageview');
+
+          setTimeout(function() {
+              ga('send','event','Profitable Engagement','time on page more than 3 minutes')
+          },180000);
