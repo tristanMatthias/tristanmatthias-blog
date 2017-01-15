@@ -1,6 +1,6 @@
 <!--
 title: One of us
-date: 15-01-2017
+date: Jan 15, 2017
 -->
 
 # One of us

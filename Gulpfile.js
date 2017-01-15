@@ -11,6 +11,9 @@ var data     = require('gulp-data');
 var markdown = require('gulp-markdown');
 var blog     = require('./gulp-blog');
 var sitemap  = require('gulp-sitemap');
+const mergeObj  = require('merge');
+
+let blogData = require('./blog');
 
 
 //--------------------------------------------------------------- Main Variables
@@ -101,7 +104,7 @@ var pugLocals = {
 gulp.task('views', function(cb) {
     return gulp.src(paths.views)
     .pipe(pug({
-        locals: pugLocals
+        locals: mergeObj({articles: blogData}, pugLocals)
     }))
     .pipe(gulp.dest(path.resolve(dist)));
 });
@@ -112,7 +115,7 @@ gulp.task('articles', function(cb) {
     return gulp.src(paths.articles.files)
     .pipe(blog({
         template: paths.articles.template,
-        locals: pugLocals
+        fileData: blogData
     }))
     .pipe(gulp.dest(path.resolve(dist, 'articles')));
 });

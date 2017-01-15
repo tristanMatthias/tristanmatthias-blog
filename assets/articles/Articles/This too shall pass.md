@@ -1,6 +1,8 @@
 <!--
 title: This too shall pass
-date: 08-01-2017
+date: Jan 8, 2017
+watermarkImg: /images/content/article-2/watermark.svg
+watermarkAlt: The Wheel of Dhamma
 -->
 
 ![The Wheel of Dhamma][image-1]

@@ -8,30 +8,41 @@ append styles
 append outerContent
     h1.upper.ta-c.wrapper The social experiment
 
+
     section.latest
         .article
+            -var latest = articles[0];
             .wrapper
-                //- img.watermark(src=`${imgPath}content/article-2/watermark.svg` alt="The Wheel of Dhamma")
-                time.new Jan 15, 2017
-                a(href="/articles/one-of-us")
-                    h2 One of us
-                p An old friend and I were chattering away, sitting on the decrepit, crumbling steps of a run down share-house, and I was coming to a realisation. I could hear his words, see his movements and to a point even understand what he was saying, but something was missing.
-            .wrapper
+                if (latest.meta.watermarkImg)
+                    img.watermark(src=`${latest.meta.watermarkImg}` alt="${latest.meta.watermarkAlt}")
+                time.new= latest.meta.date
+                a(href=latest.meta.url)
+                    h2= latest.meta.title
+                p= latest.meta.description
 
 
     section.articles
         ul
-            li.article
-                .wrapper
-                    img.watermark(src=`${imgPath}content/article-2/watermark.svg` alt="The Wheel of Dhamma")
-                    time Jan 8, 2017
-                    a(href="/articles/this-too-shall-pass")
-                        h2 This too shall pass
-                    p “Anicca, anicca, anicca…” The chanting continued over and over until the word was imprinted on the front of my brain. I was sitting in a wooden Bhuddist hall in the French countryside, attempting once again to sit still for an hour, relax my thoughts, and meditate.
-            li.article
-                .wrapper
-                    img.watermark(src=`${imgPath}content/article-1/watermark.svg` alt="watermark")
-                    time Jan 2, 2017
-                    a(href="/articles/enter-2017-and-my-social-experiment")
-                        h2 Enter 2017 and my Social Experiment
-                    p What would happen if one’s character was able to be shaped by the positive directions of all who viewed it?
+            each article in articles.slice(1)
+                li.article
+                    .wrapper
+                        if (article.meta.watermarkImg)
+                            img.watermark(src=`${article.meta.watermarkImg}` alt="${article.meta.watermarkAlt}")
+                        time= article.meta.date
+                        a(href=article.meta.url)
+                            h2= article.meta.title
+                        p= article.meta.description
+            //- li.article
+            //-     .wrapper
+            //-         img.watermark(src=`${imgPath}content/article-2/watermark.svg` alt="The Wheel of Dhamma")
+            //-         time Jan 8, 2017
+            //-         a(href="/articles/this-too-shall-pass")
+            //-             h2 This too shall pass
+            //-         p “Anicca, anicca, anicca…” The chanting continued over and over until the word was imprinted on the front of my brain. I was sitting in a wooden Bhuddist hall in the French countryside, attempting once again to sit still for an hour, relax my thoughts, and meditate.
+            //- li.article
+            //-     .wrapper
+            //-         img.watermark(src=`${imgPath}content/article-1/watermark.svg` alt="watermark")
+            //-         time Jan 2, 2017
+            //-         a(href="/articles/enter-2017-and-my-social-experiment")
+            //-             h2 Enter 2017 and my Social Experiment
+            //-         p What would happen if one’s character was able to be shaped by the positive directions of all who viewed it?

@@ -1,6 +1,8 @@
 <!--
 title: Enter 2017 and my Social Experiment
-date: 02-01-2017
+date: Jan 2, 2017
+watermarkImg: /images/content/article-1/watermark.svg
+watermarkAlt: The Social Experiment
 -->
 
 ![Experiments][image-1]

@@ -19,6 +19,7 @@
     "gulp-sass": "^3.0.0",
     "gulp-sitemap": "^4.2.0",
     "gulp-watch": "^4.3.11",
+    "jsdom": "^9.9.1",
     "koa": "^1.2.4",
     "koa-static": "^2.0.0",
     "marked": "^0.3.6",
