@@ -6,20 +6,6 @@
 	<dict>
 		<key>sheetClusters</key>
 		<dict>
-			<key>Article ideas.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505098540.03942198</real>
-				<key>lastModification</key>
-				<real>505098540.03942198</real>
-				<key>version</key>
-				<dict>
-					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-					<integer>22</integer>
-				</dict>
-			</dict>
 			<key>Enter 2017 and my Social Experiment.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -28,6 +14,16 @@
 				<dict>
 					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
 					<integer>23</integer>
+				</dict>
+			</dict>
+			<key>One of us.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506168651.05074102</real>
+				<key>version</key>
+				<dict>
+					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
+					<integer>52</integer>
 				</dict>
 			</dict>
 			<key>This too shall pass.md</key>
@@ -40,6 +36,34 @@
 					<integer>37</integer>
 				</dict>
 			</dict>
+			<key>Untitled.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>506168645.69277197</real>
+				<key>lastModification</key>
+				<real>506168645.69277197</real>
+				<key>version</key>
+				<dict>
+					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
+					<integer>50</integer>
+				</dict>
+			</dict>
+			<key>Untitleds.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>506143321.954364</real>
+				<key>lastModification</key>
+				<real>506143321.954364</real>
+				<key>version</key>
+				<dict>
+					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
+					<integer>47</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>userIconName</key>
 		<real>505033470.535806</real>
@@ -47,10 +71,16 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>Article ideas.md</string>
+			<string>One of us.md</string>
 		</array>
 		<array>
 			<string>This too shall pass.md</string>
+		</array>
+		<array>
+			<string>Untitleds.md</string>
+		</array>
+		<array>
+			<string>Untitled.md</string>
 		</array>
 		<array>
 			<string>Enter 2017 and my Social Experiment.md</string>
@@ -65,7 +95,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-			<integer>38</integer>
+			<integer>52</integer>
 		</dict>
 		<key>userIconName</key>
 		<dict>
