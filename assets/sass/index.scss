@@ -13,12 +13,20 @@ section.latest {
     position: relative;
     border-bottom: 1px solid var(--c-grey-light);
 }
+.articles {
+    padding: 0;
+}
 .article {
     position: relative;
     margin-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 4rem;
+    padding-top: 0;
     text-align: center;
     list-style: none;
+    border-bottom: 1px solid var(--c-grey-light);
+    &:last-of-type {
+        border-bottom: none;
+    }
     h2 {
         margin-bottom: 1rem;
     }
