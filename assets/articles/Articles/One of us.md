@@ -1,8 +1,10 @@
 <!--
 title: One of us
 date: Jan 15, 2017
+watermarkImg: /images/content/article-3/watermark.svg
+watermarkAlt: The Middle Path
 -->
-
+![The Middle Path][image-1]
 # One of us
 <time> Jan 15, 2017 </time>
  
@@ -46,3 +48,5 @@ If you were to describe the life I live now to the 18 year old version all those
 If in some way this evokes any emotion in you, I implore you to ask yourself where you would like to be and who it is that could help you to get there. Plenty of times, the environment and people that would serve you most is already within your grasp, it only requires a little belief and a dash of courage. 
 
 Are there people you know you shouldn’t spend time with? Good, remove them from your life. Delete their Facebook and their number, and replace them with someone more positive in your life. Is there someone who you really should catchup with, but have never really made the time? Good, call them as soon as you can, and arrange a time to meet. The ability to break away from the middle path is yours, but our eyes are so often covered to it’s power. Or you could choose to do nothing, to discount this message as something you’ll eventually get around to when the time suits you. That choice is yours to make, and my only hope is whatever you choose, it’s something that will aid you to become who you truly want to be.
+
+[image-1]:	/images/content/article-3/header.svg "The Middle Path"

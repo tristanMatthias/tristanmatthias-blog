@@ -24,7 +24,7 @@ for(file of files) {
     let name = file.toLowerCase();
     name = name.replace(/\s+/g, '-');
     name = name.replace('.md', '');
-    meta.url = path.join('www.tristanmatthias.com/articles', name);
+    meta.url = '/articles/' + name;
 
     // File contents
     contents = marked(contents);
@@ -35,8 +35,6 @@ for(file of files) {
     let firstP = window.document.body.querySelector('h1 + p + p').innerHTML;
     let split = firstP.split('. ');
     meta.description = split.slice(0,2).join(". ") + '.';
-
-    console.log(meta);
 
     fileData.push({
         path: fpath,

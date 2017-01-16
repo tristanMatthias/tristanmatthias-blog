@@ -115,7 +115,8 @@ gulp.task('articles', function(cb) {
     return gulp.src(paths.articles.files)
     .pipe(blog({
         template: paths.articles.template,
-        fileData: blogData
+        fileData: blogData,
+        locals: pugLocals
     }))
     .pipe(gulp.dest(path.resolve(dist, 'articles')));
 });

@@ -31,11 +31,12 @@ module.exports = function(options) {
         let name = /.*\/articles\/(.*)/.exec(f.meta.url);
         file.path = path.join(file.base, name[1] + '.html');
 
-        // contents = marked(contents);
-        let html = pug.renderFile(pugTemplate, merge({
+        let data = merge({
             content: f.contents,
             meta: f.meta
-        }, pugLocals));
+        }, pugLocals)
+        console.log("DATA IS", pugLocals);
+        let html = pug.renderFile(pugTemplate, data);
         //
         file.contents = new Buffer(html);
 
