@@ -45,6 +45,7 @@ time {
     font-weight: 600;
     letter-spacing: 2px;
     margin: 2rem 0;
+    user-select: none;
     &.new {
         color: var(--c-text);
         &:before {
