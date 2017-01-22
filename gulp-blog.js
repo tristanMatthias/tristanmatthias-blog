@@ -20,10 +20,10 @@ module.exports = function(options) {
         let data = merge({
             content: f.contents,
             meta: f.meta
-        }, pugLocals)
-        console.log("DATA IS", pugLocals);
+        }, pugLocals);
+
         let html = pug.renderFile(pugTemplate, data);
-        //
+        
         file.contents = new Buffer(html);
 
         callback(null, file);

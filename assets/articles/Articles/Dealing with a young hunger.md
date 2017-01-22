@@ -1,6 +1,6 @@
 <!--
 title: One of us
-date: Jan 15, 2017
+date: Jan 22, 2017
 released: false
 -->
 # Dealing with a young hunger
@@ -20,7 +20,7 @@ That morning of pacing is unfortunately a regular occurrence, usually followed b
 ## One step at a time
 The more I explored the possibilities of what could be, the inherent issues of the world slowly became more apparent, and with it a burning desire to fix them. I took on a stress so unnecessary to my life, which in turn created the opposite effect to what I desired. I grew frustrated and weary that my goals were so far from actualisation. It sent me on a negative spiral that if I was not careful would throw me back into the pit of self doubt which took so long to crawl out of. This world is a vast and immensely complex reality, and to the young and ambitiously naive we eventually become fixated on how we can change it. It’s not our job. Yet. 
 
-The fore site and desire to create a better world is a wonderful outlook, and often I need to remind myself to apply this to my own life, on a relatively micro scale, instead of the macro. Other passionate individuals I meet, set out on a quest to cure the worlds ailments are also struggling with the same unnecessary pressure. We need to relax.
+The foresight and desire to create a betteer world is a wonderful outlook, and often I need to remind myself to apply this to my own life, on a relatively micro scale, instead of the macro. Other passionate individuals I meet, set out on a quest to cure the worlds ailments are also struggling with the same unnecessary pressure. We need to relax.
 
 ## Direct the hunger
 I’m reminded of a very pivotal conversation I had with a mentor. I was sitting in his house late one night with a few others my age who shared the young hunger. I was describing my passion for public speaking, and how I’m hellbent on becoming a world renowned speaker. He encouraged my obvious passion  and devotion to a better existence, however explained that applying this energy to the world’s problems was misplaced. The effect of trying to shape the world without any real experience, environment or resources would just cause severe frustration and ultimately demoralise us into abandoning the pursuit. Instead, placing this hunger on creating a better life for ourselves would propel us into a position where we are able to effectively assist. 
