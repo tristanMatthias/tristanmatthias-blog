@@ -3,28 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>order</key>
-	<array>
-		<string>Articles/This too shall pass.md</string>
-	</array>
+	<array/>
 	<key>resolutionData</key>
 	<dict>
 		<key>order</key>
-		<dict>
-			<key>Articles/This too shall pass.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>506135185.38375503</real>
-				<key>lastModification</key>
-				<real>506135185.38375503</real>
-				<key>version</key>
-				<dict>
-					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-					<integer>36</integer>
-				</dict>
-			</dict>
-		</dict>
+		<dict/>
 	</dict>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
@@ -33,7 +16,7 @@
 		<key>order</key>
 		<dict>
 			<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-			<integer>42</integer>
+			<integer>46</integer>
 		</dict>
 	</dict>
 </dict>

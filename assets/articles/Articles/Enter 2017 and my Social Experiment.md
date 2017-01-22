@@ -51,6 +51,6 @@ I vow for a completely transparent and vulnerable process so that perhaps we  al
 
 There you have it. That’s my focus for this year and this is where it starts. I’m reminded of something a mentor of mine once said, “Language doesn’t describe reality, it defines it”. To me, this begets a need to explore, experiment, and share the experience, and so begins our journey.
 
-[1]:	obession
+[1]:	/articles/dealing-with-a-young-hunger "Dealing with a young hunger"
 
 [image-1]:	/images/content/article-1/header.svg "Experiments"
