@@ -1,8 +1,10 @@
 <!--
 title: One of us
 date: Jan 22, 2017
-released: false
+watermarkImg: /images/content/article-4/watermark.svg
+watermarkAlt: Saving the world
 -->
+![Saving the world][image-1]
 # Dealing with a young hunger
 <time> Jan 22, 2017 </time>
 
@@ -38,3 +40,5 @@ Of course there is still a drive to improve. Perhaps this will never cease, howe
 Our young hunger can be a gift or a curse, depending on where we direct it. If you know someone like this, remind them that they’re doing a good job despite how they feel. Ask them to see how far they’ve already come. If this person is you, then cut yourself some slack, it will all turn out ok in the end.
 
 [1]:	/articles/one-of-us
+
+[image-1]:	/images/content/article-4/header.svg "Saving the world"
