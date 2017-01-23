@@ -5,6 +5,14 @@ const serve = require('koa-static');
 
 const app = koa();
 
+// 404
+app.use(function*(next) {
+    yield next;
+    if (this.status == "404") this.redirect('/404');
+});
+
+
+
 // Serve pages without .html extension
 app.use(function*(next) {
     if (this.path.slice(-1) == '/') this.path += "index";
