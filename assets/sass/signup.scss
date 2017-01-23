@@ -1,0 +1,20 @@
+@import 'lib/abstracts/import';
+
+html {
+    background-color: var(--c-main);
+    background-image: url(/images/background.svg);
+}
+.wrapper {
+    text-align: center;
+}
+
+form.signup {
+    background-color: var(--c-white);
+    margin-bottom: 2rem;
+}
+
+a.return {
+    color: var(--c-white);
+    text-align: center;
+    text-decoration: none;
+}

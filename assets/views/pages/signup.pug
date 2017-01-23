@@ -1,0 +1,14 @@
+extends ../templates/main
+
+append vars
+    -headerWhite = true
+    -skipFooter = true
+
+append styles
+    link(rel="stylesheet", href="css/signup.css")
+
+block content
+    .wrapper
+        include ../partials/signup-form
+
+        a.return(href="/") Return home &rarr;
