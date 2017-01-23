@@ -1,7 +1,10 @@
 .i {
     width: 2rem;
     height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
 }
 .i.i-twitter { background-image: url(/images/icons/twitter.svg); }
 .i.i-dribbble { background-image: url(/images/icons/dribbble.svg); }
 .i.i-mail { background-image: url(/images/icons/mail.svg); }
+.i.i-newsletter { background-image: url(/images/icons/newsletter.svg); }

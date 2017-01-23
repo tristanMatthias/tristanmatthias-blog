@@ -1,0 +1,31 @@
+form {
+    input:not(*[type='submit']), textarea {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        border-bottom: 2px solid var(--c-main-light);
+        transition: all var(--ani-time);
+        &:focus {
+            border-color: var(--c-main)
+        }
+    }
+    input, textarea {
+        vertical-align: middle;
+        font-family: var(--ff-title);
+        &:placeholder-shown {
+            color: var(--c-grey-light);
+        }
+    }
+
+    $height: 3rem;
+    input:not(*[type='submit']) {
+        height: $height;
+        line-height: $height;
+    }
+    input[type='submit'] {
+        height: $height;
+        background-color: var(--c-main);
+        border: none;
+        color: var(--c-white);
+    }
+}

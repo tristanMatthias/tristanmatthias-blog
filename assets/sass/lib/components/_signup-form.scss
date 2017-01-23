@@ -1,0 +1,42 @@
+form.signup {
+    margin: 8rem 0;
+    text-align: center;
+    border: 1px solid var(--c-grey-midlight);
+    padding: 4rem;
+    border-radius: var(--border-radius-large);
+
+    $logo: 4.5rem;
+    .logo {
+        width: $logo;
+        height: $logo;
+        line-height: $logo;
+        text-align: center;
+        margin: auto;
+        background-color: var(--c-main);
+        border-radius: var(--border-radius-large);
+        img { width: (2/3 * $logo); vertical-align: middle; }
+    }
+    input[type="email"] {
+        min-width: 10rem;
+        max-width: 16rem;
+    }
+    h2 {
+        margin: 1rem 0;
+        color: var(--c-grey-dark);
+    }
+    button {
+        width: 6rem;
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        text-align: center;
+        vertical-align: bottom;
+    }
+}
+
+@media #{$large-up} {
+    form.signup {
+        input[type="email"] {
+            min-width: 20rem;
+        }
+    }
+}

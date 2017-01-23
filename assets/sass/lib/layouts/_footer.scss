@@ -1,13 +1,23 @@
 footer {
     // margin-top: 8rem;
     border-top: 1px solid var(--c-grey-midlight);
-    background-color: var(--c-main-light);
+    background-color: var(--c-black);
     padding: 4rem;
     padding-bottom: 2rem;
 
     * {
         color: var(--c-grey);
         font-family: var(--ff-title);
+    }
+    a {
+        transition: filter var(--ani-time);
+    }
+    a:hover {
+        filter: brightness(5);
+    }
+
+    span.copy {
+        opacity: 0.25;
     }
     //
     // .author {
