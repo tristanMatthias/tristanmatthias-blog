@@ -98,7 +98,8 @@ gulp.task('copy', function (cb) {
 
 
 var pugLocals = {
-    imgPath: '/images/'
+    imgPath: '/images/',
+    liveUrl: "http://www.tristanmatthias.com"
 };
 //------------------------------------------------------------------------ Views
 gulp.task('views', function(cb) {

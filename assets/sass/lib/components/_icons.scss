@@ -8,3 +8,24 @@
 .i.i-dribbble { background-image: url(/images/icons/dribbble.svg); }
 .i.i-mail { background-image: url(/images/icons/mail.svg); }
 .i.i-newsletter { background-image: url(/images/icons/newsletter.svg); }
+.i.i-tick { background-image: url(/images/icons/tick.svg); }
+
+.i.i-loading {
+    position: relative;
+    &:before, &:after {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        // background-image: radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        background-image: radial-gradient(rgba(255,255,255,0.3), rgba(255,255,255,1));
+        animation: grow 2s infinite;
+    }
+    &:after {
+        animation-delay: 1s;
+    }
+}

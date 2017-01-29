@@ -11,6 +11,8 @@
   "author": "Tristan Matthias",
   "license": "ISC",
   "dependencies": {
+    "boom": "^4.2.0",
+    "co-request": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-data": "^1.2.1",
@@ -21,6 +23,8 @@
     "gulp-watch": "^4.3.11",
     "jsdom": "^9.9.1",
     "koa": "^1.2.4",
+    "koa-body": "^1.6.0",
+    "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
     "marked": "^0.3.6",
     "marked-metadata": "0.0.6",

@@ -55,6 +55,7 @@ html(lang='en')
             }
 
     body
+        include ../partials/facebook-sdk
         unless skipHeader
             include ../partials/header
 
@@ -65,18 +66,26 @@ html(lang='en')
         unless skipFooter
             include ../partials/footer
 
+
+
+
         script(src="https://use.typekit.net/ess3ihf.js")
         script try{Typekit.load({ async: true });}catch(e){}
 
         script.
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-41808476-2', 'auto');
-          ga('send', 'pageview');
+            ga('create', 'UA-41808476-2', 'auto');
+            ga('send', 'pageview');
 
-          setTimeout(function() {
+            setTimeout(function() {
               ga('send','event','Profitable Engagement','time on page more than 3 minutes')
-          },180000);
+            },180000);
+
+
+        script(src="/js/signup.js")
+
+        block scripts

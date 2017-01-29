@@ -20,6 +20,8 @@
     --c-orange: #e8a409;
     --c-orange-light: #f4e5c3;
 
+    --c-red: #be2553;
+
 
     --c-black: #2f2758;
     --c-grey-dark: #5a547a;
@@ -34,6 +36,7 @@
     --c-secondary: var(--c-orange);
     --c-secondary-light: var(--c-orange-light);
     --c-text: var(--c-grey-dark);
+    --c-error: var(--c-red);
 
 
     --article-width: 740px;
@@ -56,4 +59,11 @@ html {
 .wrapper {
     max-width: var(--article-width);
     margin: auto;
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }

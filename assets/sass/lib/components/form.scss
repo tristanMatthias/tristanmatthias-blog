@@ -28,4 +28,13 @@ form {
         border: none;
         color: var(--c-white);
     }
+
+    &.error {
+        color: var(--c-error);
+    }
+    .errorMessage {
+        margin-top: 1rem;
+        font-size: var(--fs-small);
+        font-family: var(--ff-title);
+    }
 }

@@ -8,9 +8,10 @@ html {
     text-align: center;
 }
 
-form.signup {
-    background-color: var(--c-white);
+.signup-form {
+    margin-top: 0;
     margin-bottom: 2rem;
+    background-color: var(--c-white);
 }
 
 a.return {

@@ -1,37 +1,78 @@
-form.signup {
+.signup-form {
+    position: relative;
     margin: 8rem 0;
-    text-align: center;
     border: 1px solid var(--c-grey-midlight);
-    padding: 4rem;
     border-radius: var(--border-radius-large);
+    height: 22rem;
 
-    $logo: 4.5rem;
-    .logo {
-        width: $logo;
-        height: $logo;
-        line-height: $logo;
+    form.signup {
+        box-sizing: border-box;
+        position: absolute;
         text-align: center;
-        margin: auto;
-        background-color: var(--c-main);
-        border-radius: var(--border-radius-large);
-        img { width: (2/3 * $logo); vertical-align: middle; }
+        padding: 4rem;
+        width: 100%;
+
+        $logo: 4.5rem;
+        .logo {
+            width: $logo;
+            height: $logo;
+            line-height: $logo;
+            text-align: center;
+            margin: auto;
+            background-color: var(--c-main);
+            border-radius: var(--border-radius-large);
+            img { width: (2/3 * $logo); vertical-align: middle; }
+        }
+        input[type="email"] {
+            min-width: 10rem;
+            max-width: 16rem;
+        }
+        h2 {
+            margin: 1rem 0;
+            margin-bottom: 2rem;
+            color: var(--c-grey-dark);
+        }
+        button {
+            width: 6rem;
+            border-top-right-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            text-align: center;
+            vertical-align: bottom;
+        }
     }
-    input[type="email"] {
-        min-width: 10rem;
-        max-width: 16rem;
+    .success {
+        position: absolute;
+        display: none;
+        padding: 4rem;
+        box-sizing: border-box;
+        
+        .i-tick {
+            width: 4rem;
+            height: 4rem;
+        }
     }
-    h2 {
-        margin: 1rem 0;
-        color: var(--c-grey-dark);
-    }
-    button {
-        width: 6rem;
-        border-top-right-radius: 3rem;
-        border-bottom-right-radius: 3rem;
-        text-align: center;
-        vertical-align: bottom;
+    &.success {
+        form {
+            animation: slideupout 0.5s forwards;
+        }
+        .success {
+            width: 100%;
+            display: block;
+            animation: slideupin 0.5s forwards;
+        }
     }
 }
+@media #{$tiny-up} {
+    .signup-form {
+        height: 26rem;
+    }
+}
+@media #{$medium-up} {
+    .signup-form {
+        height: 24rem;
+    }
+}
+
 
 @media #{$large-up} {
     form.signup {
