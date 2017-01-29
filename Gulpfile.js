@@ -103,9 +103,13 @@ var pugLocals = {
 };
 //------------------------------------------------------------------------ Views
 gulp.task('views', function(cb) {
+    // Don't show any articles tagges as released = false
+    let released = blogData.filter((article) => {
+        return article.meta.released != 'false';
+    });
     return gulp.src(paths.views)
     .pipe(pug({
-        locals: mergeObj({articles: blogData}, pugLocals)
+        locals: mergeObj({articles: released}, pugLocals)
     }))
     .pipe(gulp.dest(path.resolve(dist)));
 });

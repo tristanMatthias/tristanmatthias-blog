@@ -46,12 +46,25 @@
 					<integer>37</integer>
 				</dict>
 			</dict>
+			<key>When fighting monsters.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507355787.32752502</real>
+				<key>version</key>
+				<dict>
+					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
+					<integer>61</integer>
+				</dict>
+			</dict>
 		</dict>
 		<key>userIconName</key>
 		<real>505033470.535806</real>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
+		<array>
+			<string>When fighting monsters.md</string>
+		</array>
 		<array>
 			<string>Dealing with a young hunger.md</string>
 		</array>
@@ -74,7 +87,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-			<integer>58</integer>
+			<integer>62</integer>
 		</dict>
 		<key>userIconName</key>
 		<dict>
