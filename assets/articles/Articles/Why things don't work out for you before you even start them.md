@@ -1,8 +1,10 @@
 <!--
 title: Why things don't work out for you before you even start them
 date: Feb 5, 2017
-released: false
+watermarkImg: /images/content/article-6/watermark.png
+	watermarkAlt: Tree of belief
 -->
+![Tree of belief][image-1]
 # Why things don't work out for you before you even start them
 <time> Feb 5, 2017 </time>
 
@@ -40,3 +42,5 @@ I view doubt now as an internal test, something to be conquered. If I’m able t
 I feel the trick is not removing doubt, rather learning how to temper yourself against it in order to strengthen your willpower. It may be seen as a challenge one must take repeatedly in growth, and the more awareness we keep around our doubts, the greater our achievements and the easier our lives become.
 
 After my experiment, I’ve applied a little faith to everything I once doubted. My relationships, my abilities, and what I stand for are just a small fraction of what’s changed for the better. I give people a chance when I was previously dubious. It gives rise to the voice of others if I allow my initial doubt to subside. I give the benefit of a doubt to myself when I take on new endeavours, as I know how crippling it can be when starting out. There’s a piece of paper by my bedside table to remind me. On it is my mantra, that doubt is the seed of failure, and belief is the seed of success.
+
+[image-1]:	/images/content/article-6/header.png "Tree of belief"
