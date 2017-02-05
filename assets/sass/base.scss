@@ -2,7 +2,7 @@
 
 :root {
     --ani-time: 0.35s;
-
+    
     --fs-huge: 3.6rem;
     --fs-large: 2.4rem;
     --fs-main: 1.8rem;
@@ -15,6 +15,7 @@
 
 
     --c-purple: #584A9C;
+    --c-purple-hover: #877dba;
     --c-purple-light: #e9e4f3;
 
     --c-orange: #e8a409;
@@ -32,6 +33,7 @@
 
 
     --c-main: var(--c-purple);
+    --c-main-hover: var(--c-purple-hover);
     --c-main-light: var(--c-purple-light);
     --c-secondary: var(--c-orange);
     --c-secondary-light: var(--c-orange-light);

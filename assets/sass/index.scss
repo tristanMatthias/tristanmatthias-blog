@@ -1,4 +1,7 @@
 @import 'lib/abstracts/import';
+* {
+    box-sizing: border-box;
+}
 body .content {
     padding: 0;
 }
@@ -31,6 +34,9 @@ section.latest {
     h2 {
         margin-bottom: 1rem;
     }
+    a:hover h2 {
+        color: var(--c-purple-hover);
+    }
     .watermark {
         position: absolute;
         left: 50%;
@@ -56,5 +62,41 @@ section.latest {
     h1.wrapper {
         font-size: 7.2rem;
         margin-top: -1.4rem;
+    }
+    section.articles {
+        max-width: var(--article-width);
+        margin: auto;
+        font-size: 0;
+        padding: 0;
+        li.article {
+            width: calc(50% - 2rem);
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            padding: 0;
+            border-bottom: 0;
+            margin-top: 2rem;
+
+            &:nth-child(2n) {
+                margin-left: 4rem;
+            }
+            &:last-child {
+                margin-bottom: 8rem;
+            }
+
+            time {
+                font-size: 1rem;
+                margin: 1rem 0;
+            }
+            h2 {
+                font-size: var(--fs-main);
+            }
+            p {
+                font-size: var(--fs-tiny);
+            }
+            .watermark {
+                width: 50%;
+            }
+        }
     }
 }
