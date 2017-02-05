@@ -23,6 +23,7 @@ for(file of files) {
     // Metadata url
     let name = file.toLowerCase();
     name = name.replace(/\s+/g, '-');
+    name = name.replace(/\'+/g, '');
     name = name.replace('.md', '');
     meta.url = '/articles/' + name;
 

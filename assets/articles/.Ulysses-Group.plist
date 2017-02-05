@@ -2,8 +2,40 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>childOrder</key>
+	<array>
+		<string>Work</string>
+		<string>Articles</string>
+	</array>
 	<key>resolutionData</key>
 	<dict>
+		<key>childOrder</key>
+		<dict>
+			<key>Articles</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507955213.22764403</real>
+				<key>version</key>
+				<dict>
+					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
+					<integer>2</integer>
+				</dict>
+			</dict>
+			<key>Work</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>507955225.34323603</real>
+				<key>lastModification</key>
+				<real>507955225.34323603</real>
+				<key>version</key>
+				<dict>
+					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
+					<integer>3</integer>
+				</dict>
+			</dict>
+		</dict>
 		<key>userIconName</key>
 		<real>505034696.95210999</real>
 	</dict>
@@ -13,6 +45,11 @@
 	<string>Computer</string>
 	<key>versioning</key>
 	<dict>
+		<key>childOrder</key>
+		<dict>
+			<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
+			<integer>3</integer>
+		</dict>
 		<key>userIconName</key>
 		<dict>
 			<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
