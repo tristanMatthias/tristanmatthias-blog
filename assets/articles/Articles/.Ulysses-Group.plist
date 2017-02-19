@@ -3,43 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>childOrder</key>
-	<array>
-		<string>Work</string>
-		<string>New Folder</string>
-	</array>
+	<array/>
 	<key>resolutionData</key>
 	<dict>
 		<key>childOrder</key>
-		<dict>
-			<key>New Folder</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507955239.74005502</real>
-				<key>lastModification</key>
-				<real>507955239.74005502</real>
-				<key>version</key>
-				<dict>
-					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-					<integer>7</integer>
-				</dict>
-			</dict>
-			<key>Work</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507955213.229792</real>
-				<key>lastModification</key>
-				<real>507955213.229792</real>
-				<key>version</key>
-				<dict>
-					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-					<integer>4</integer>
-				</dict>
-			</dict>
-		</dict>
+		<dict/>
 		<key>sheetClusters</key>
 		<dict>
 			<key>Dealing with a young hunger.md</key>
@@ -62,20 +30,6 @@
 					<integer>23</integer>
 				</dict>
 			</dict>
-			<key>Front end ad.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507955320.66074097</real>
-				<key>lastModification</key>
-				<real>507955320.66074097</real>
-				<key>version</key>
-				<dict>
-					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-					<integer>69</integer>
-				</dict>
-			</dict>
 			<key>One of us.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -84,6 +38,16 @@
 				<dict>
 					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
 					<integer>52</integer>
+				</dict>
+			</dict>
+			<key>The daily choice that changes everything.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508560902.015513</real>
+				<key>version</key>
+				<dict>
+					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
+					<integer>98</integer>
 				</dict>
 			</dict>
 			<key>This too shall pass.md</key>
@@ -96,18 +60,18 @@
 					<integer>37</integer>
 				</dict>
 			</dict>
-			<key>Tunnel vision, and why you're not doing enough.md</key>
+			<key>Untitled.md</key>
 			<dict>
 				<key>explicitUnassignment</key>
 				<true/>
 				<key>firstUnassignment</key>
-				<real>507977135.91623199</real>
+				<real>509162497.211169</real>
 				<key>lastModification</key>
-				<real>507977135.91623199</real>
+				<real>509162497.211169</real>
 				<key>version</key>
 				<dict>
 					<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-					<integer>95</integer>
+					<integer>102</integer>
 				</dict>
 			</dict>
 			<key>When fighting monsters.md</key>
@@ -137,16 +101,16 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
+			<string>The daily choice that changes everything.md</string>
+		</array>
+		<array>
+			<string>Untitled.md</string>
+		</array>
+		<array>
 			<string>Why things don't work out for you before you even start them.md</string>
 		</array>
 		<array>
-			<string>Tunnel vision, and why you're not doing enough.md</string>
-		</array>
-		<array>
 			<string>When fighting monsters.md</string>
-		</array>
-		<array>
-			<string>Front end ad.md</string>
 		</array>
 		<array>
 			<string>Dealing with a young hunger.md</string>
@@ -175,7 +139,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>a80a3179db9cae2039ef79604e648e92262871b89842fcecdad75e9dfe534735</key>
-			<integer>95</integer>
+			<integer>102</integer>
 		</dict>
 		<key>userIconName</key>
 		<dict>
