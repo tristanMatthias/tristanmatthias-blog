@@ -1,7 +1,6 @@
 <!--
 title: The daily choice that changes everything
 date: Feb 19, 2017
-released: false
 -->
 # The daily choice that changes everything
 <time> Feb 19, 2017 </time>
