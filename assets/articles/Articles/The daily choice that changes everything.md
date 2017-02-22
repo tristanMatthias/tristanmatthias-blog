@@ -34,6 +34,10 @@ He remembered his father selling fruit here all those years ago. People flocked 
 
 The journey back was more dangerous, as Mani could not see clearly in the dark jungle, and there was the chance of running into a large wildcat. He dreaded the disappointment on his family’s faces when he returned next to empty handed for his days work. He hated letting them down. The shadow of his father’s successful trading business loomed over him, but he had no idea how to match him. He was just unlucky and disliked. Some people are born with the ability to be happy, and some just are not. Mani had come to terms with that. He reached home and collapsed on his straw bed, drained from all the hiking. The children’s taunts ran over in his mind, and he fell asleep to a sad chorus of “Banana brain, banana brain…”
 
+<div class="article-7-img">
+![Palm tree][image-2]
+</div>
+
 “Wake up sleepy!” Mani’s little brother, Ina, jumped up and down on the end of his bed, a bundle of excitement. Mani groaned, and awoke rubbing his eyes. “Tata says I am to go with you to the other village today. He says I am to learn how to fish from the men there!” he squealed. Mani envied his younger brother. Ina spent most of his time exploring, adventuring, and learning. He always appeared happy, and full of life. It cheered him up when he was around.
 
 “Are you sure? It is a long journey,” Mani warned, slipping on his damp shoes, “I am not going to carry you.”
@@ -80,4 +84,10 @@ The next day, Mani was faced with the same choice, and the day after that, and s
 
 “I am too” Mani replied, and he truly was. Everything had changed for him and that night on his journey home, he returned to the old path as it veered to the left. Despite all efforts to search for it he could not see the road anywhere. The jungle had consumed it, left it overgrown, never to be walked on again. Unfazed, Mani left it alone, smiling, and never once looked back.
 
+<div class="article-7-img">
+![Banana][image-3]
+</div>
+
 [image-1]:	/images/content/article-7/header.svg "Backpack and fruit"
+[image-2]:	/images/content/article-7/tree.svg "Palm tree"
+[image-3]:	/images/content/article-7/banana.svg "Banana"

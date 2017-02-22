@@ -3,6 +3,13 @@ extends main
 append content
     article.wrapper !{content}
 
+    .related.wrapper
+        a(href=`${prev.url}`)
+            small Previous article
+            span #{prev.title}
+        a(href=`${next.url}`)
+            small Next article
+            span #{next.title}
     .profile.wrapper
         img.f-left(src=`${imgPath}profile.jpg` alt="Tristan Matthias")
         h4 Tristan Matthias

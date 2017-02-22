@@ -2,7 +2,7 @@
 
 :root {
     --ani-time: 0.35s;
-    
+
     --fs-huge: 3.6rem;
     --fs-large: 2.4rem;
     --fs-main: 1.8rem;
@@ -68,4 +68,14 @@ html {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
+}
+
+
+// ------------------------------------------------------------------- Article 7
+.article-7-img {
+    text-align: center;
+    padding: 4rem;
+    img {
+        max-width: 8rem;
+    }
 }

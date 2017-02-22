@@ -13,7 +13,7 @@ append outerContent
             -var latest = articles[0];
             .wrapper
                 if (latest.meta.watermarkImg)
-                    img.watermark(src=`${latest.meta.watermarkImg}` alt="${latest.meta.watermarkAlt}")
+                    img.watermark(src=`${latest.meta.watermarkImg}` alt=`${latest.meta.watermarkAlt}`)
                 time.new= latest.meta.date
                 a(href=latest.meta.url)
                     h2= latest.meta.title
@@ -26,7 +26,7 @@ append outerContent
                 li.article
                     .wrapper
                         if (article.meta.watermarkImg)
-                            img.watermark(src=`${article.meta.watermarkImg}` alt="${article.meta.watermarkAlt}")
+                            img.watermark(src=`${article.meta.watermarkImg}` alt=`${article.meta.watermarkAlt}`)
                         time= article.meta.date
                         a(href=article.meta.url)
                             h2= article.meta.title

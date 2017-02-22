@@ -5,3 +5,10 @@ header {
         height: 3rem;
     }
 }
+
+
+@media #{$medium-up} {
+    header {
+        position: fixed;
+    }
+}
