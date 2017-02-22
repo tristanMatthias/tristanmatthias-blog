@@ -2,7 +2,7 @@
 title: Why things don't work out for you before you even start them
 date: Feb 5, 2017
 watermarkImg: /images/content/article-6/watermark.png
-	watermarkAlt: Tree of belief
+watermarkAlt: Tree of belief
 -->
 ![Tree of belief][image-1]
 # Why things don't work out for you before you even start them

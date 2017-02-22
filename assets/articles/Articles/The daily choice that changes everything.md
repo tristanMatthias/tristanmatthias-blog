@@ -1,7 +1,10 @@
 <!--
 title: The daily choice that changes everything
 date: Feb 19, 2017
+watermarkImg: /images/content/article-7/watermark.svg
+watermarkAlt: Backpack and fruit
 -->
+![Backpack and fruit][image-1]
 # The daily choice that changes everything
 <time> Feb 19, 2017 </time>
 
@@ -76,3 +79,5 @@ The next day, Mani was faced with the same choice, and the day after that, and s
 “I’m proud of you,” Ina said one afternoon as they were sitting by the beach, “I know how hard it was for you to follow me that morning. You kept going too. I’m glad you did”.
 
 “I am too” Mani replied, and he truly was. Everything had changed for him and that night on his journey home, he returned to the old path as it veered to the left. Despite all efforts to search for it he could not see the road anywhere. The jungle had consumed it, left it overgrown, never to be walked on again. Unfazed, Mani left it alone, smiling, and never once looked back.
+
+[image-1]:	/images/content/article-7/header.png "Backpack and fruit"
