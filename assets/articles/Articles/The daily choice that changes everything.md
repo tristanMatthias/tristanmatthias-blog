@@ -80,4 +80,4 @@ The next day, Mani was faced with the same choice, and the day after that, and s
 
 “I am too” Mani replied, and he truly was. Everything had changed for him and that night on his journey home, he returned to the old path as it veered to the left. Despite all efforts to search for it he could not see the road anywhere. The jungle had consumed it, left it overgrown, never to be walked on again. Unfazed, Mani left it alone, smiling, and never once looked back.
 
-[image-1]:	/images/content/article-7/header.png "Backpack and fruit"
+[image-1]:	/images/content/article-7/header.svg "Backpack and fruit"
